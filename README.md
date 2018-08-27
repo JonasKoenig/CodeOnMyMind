@@ -1,4 +1,4 @@
-![Code On My Mind Icon](media/icon.png)
+![Code On My Mind Icon](media/icon.png|width=64)
 # Code On My Mind
 My name is Jonas and I study Computer Science in Tübingen, Germany. I am creating a blog to keep track of nifty code tricks and techniques I learned. I share this with you, not because something like this has never been done before, but to practice explaining code I wrote.
 
