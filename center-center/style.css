@@ -1,13 +1,15 @@
 /* =========================== CENTERING ============================ */
 
 .container {
-  position: relative;
-  text-align: center;
+  text-align: center;  /* horizontal */
+
+  position: relative;  /* vertical */
 }
 
 .center-center {
-  position: absolute;
-  width: 100%;
+  width: 100%;         /* horizontal */
+
+  position: absolute;  /* vertical */
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
