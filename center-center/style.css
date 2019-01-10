@@ -1,0 +1,29 @@
+/* =========================== CENTERING ============================ */
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.center-center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ========================== COSMETICS ============================ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+}
+
+h1 {
+  font-size: 100pt;
+}
