@@ -20,6 +20,10 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: #B04632;
+  color: white;
 }
 
 .container {
@@ -27,5 +31,21 @@ html, body {
 }
 
 h1 {
-  font-size: 100pt;
+  font-size: 120pt;
+  margin: 0;
+}
+
+.label {
+  font-size: 12pt;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+button {
+  font-size: 12pt;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
 }
