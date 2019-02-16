@@ -8,4 +8,4 @@ Also check out my Tumblr: https://codeonmymind.tumblr.com/
 
 Testing MD-Links:
 
-[relative reference](../blob/master/center-center)
+[relative reference](./center-center)
