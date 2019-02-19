@@ -1,16 +1,11 @@
 /* =========================== CENTERING ============================ */
 
 .container {
-  text-align: center;  /* horizontal */
+  text-align: center;  /* horizontal align */
+  width: 100%;         /* horizontal stretch*/
 
-  position: relative;  /* vertical */
-}
-
-.center-center {
-  width: 100%;         /* horizontal */
-
-  position: absolute;  /* vertical */
-  top: 50%;
+  position: absolute;  /* vertical align */
+  top: 50%;            /* vertical align */
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
