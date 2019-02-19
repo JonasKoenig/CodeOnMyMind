@@ -11,6 +11,7 @@ The full history of this repository aims to show how this repository developed a
 
 | Date | Project | Description | Tags |
 |:-----|:-------:|:------------|:----:|
+| 19. Feb 2019 | [Text Analysis](./text-analysis) | TextBlob: Disecting Text into data | python |
 | 10. Jan 2019 | [Center-center](./center-center) | Centering divs horizontally and vertically | html, css |
 | 17. Sep 2018 | [Rescaling and Lerp](./rescaling-and-lerp) | Linear interpolation between two ranges | processing, math |
 | 27. Aug 2018 | [Selections via SVG](./svg-selection) | ‘marching ants’ animation using svg in css | svg, css |
