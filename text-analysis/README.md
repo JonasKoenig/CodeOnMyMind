@@ -1,4 +1,4 @@
-# Text Analysis
+## Text Analysis
 
 In this code snippet I used the python library [TextBlob](https://textblob.readthedocs.io) to analyse text one sentence at a time.
 
