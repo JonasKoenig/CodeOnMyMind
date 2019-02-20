@@ -1,18 +1,8 @@
 import random
 import numpy as np
 
-def pretty_print(map, size):
-    shades = ['  ', '░░', '▒▒', '▓▓', '██']
-    string = ''
-    for y in range(0,size):
-        for x in range(0,size):
-            string += shades[int(np.floor(map[y][x]*(len(shades)-1)))]
-        string += '\n'
-    print(string)
-
-size = 8
-random.seed(26)
-random.seed(17)
+size = 32
+random.seed(42)
 
 # normalized random noise map
 map = np.array([random.random() for x in range(size**2)]).reshape((size,size))
@@ -26,21 +16,11 @@ def scale_up(array, factor):
 # add noise with different levels of detail
 level = 0
 
-while 2**level < size/4:
+while 2**level < size:
     a = int(size/2**level)
     random_grid = np.array([random.choice((0,1)) for x in range(a**2)]).reshape((a,a))
-    pretty_print(random_grid, a)
-    pretty_print(scale_up(random_grid ,2**level), size)
     map += scale_up(random_grid ,2**level)
     level += 1
-
-
-
-
-
-
-
-
 
 # raw noise map with values between 0 and level
 #print(map)
@@ -49,4 +29,12 @@ while 2**level < size/4:
 map = map/(level+1)
 #print(map)
 
-pretty_print(map, size)
+# pretty print
+shades = ['  ', '░░', '▒▒', '▓▓', '██']
+string = ''
+for y in range(0,size):
+    for x in range(0,size):
+        string += shades[int(np.floor(map[y][x]*(len(shades))))]
+    string += '\n'
+
+print(string)
