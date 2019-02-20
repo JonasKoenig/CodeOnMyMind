@@ -1,6 +1,6 @@
 ## Text Analysis
 
-In this code snippet I used the python library [TextBlob](https://textblob.readthedocs.io) to analyse text one sentence at a time.
+In this code snippet I used the python library [TextBlob](https://textblob.readthedocs.io) to analyse text.
 
 ```python
 blob = TextBlob(text)
@@ -10,6 +10,8 @@ for sentence in blob.sentences:
     print(sentence.sentiment))
     print(len(sentence.words))
 ```
+
+The script loads the text from a file and then disects it using TextBlob. Then I showcase some features one sentence at a time. This example is a sentence from the opening text crawl from '_Star Wars: Episode IV – A New Hope_'.
 
 ```
 $ python script.py
