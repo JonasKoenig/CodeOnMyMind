@@ -34,6 +34,7 @@ Sometimes noise needs to be smoother. For example, if the noise map is used as a
 
 #### Level 0
 initial random noise map:
+
 ![initial random noise map of small example](./noise-maps/lod_noise_8x8_initial.PNG)
 
 
