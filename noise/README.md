@@ -34,7 +34,7 @@ Sometimes noise needs to be smoother. For example, if the noise map is used as a
 
 #### Level 0
 initial random noise map:
-![initial random noise map of small example](./noise-maps/lod-noise_8x8_initial.PNG)
+![initial random noise map of small example](./noise-maps/lod_noise_8x8_initial.PNG)
 
 
 #### Level 1 (new noise map, upscaling does not do anything yet)
@@ -77,7 +77,17 @@ initial random noise map:
 #### Aggregate
 Summing everything up and normalizing by dividing by the number of levels will result in this smoothed noise map:
 
-![final noise map of small example](./noise-maps/lod-noise_8x8_final.PNG)
+![final noise map of small example](./noise-maps/lod_noise_8x8_final.PNG)
+
+Adding different levels is done in this while loop:
+
+```python
+while 2**level < size:
+    a = int(size/2**level)
+    random_grid = np.array([random.choice((0,1)) for x in range(a**2)]).reshape((a,a))
+    map += scale_up(random_grid ,2**level)
+    level += 1
+```
 
 Again in 32x32 for comparison:
 
