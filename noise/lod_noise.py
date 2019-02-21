@@ -1,11 +1,10 @@
-import random
 import numpy as np
 
 size = 32
-random.seed(42)
+np.random.seed(42)
 
 # normalized random noise map
-map = np.array([random.random() for x in range(size**2)]).reshape((size,size))
+map = np.random.rand(size,size)
 
 # scales an array up along vertical and horizontal axis
 def scale_up(array, factor):
@@ -18,16 +17,12 @@ level = 0
 
 while 2**level < size:
     a = int(size/2**level)
-    random_grid = np.array([random.choice((0,1)) for x in range(a**2)]).reshape((a,a))
-    map += scale_up(random_grid ,2**level)
+    random_grid = np.random.randint(0, 1+1, size=(a,a))
+    map += scale_up(random_grid, 2**level)
     level += 1
 
-# raw noise map with values between 0 and level
-#print(map)
-
 # normalize noise map
-map = map/(level+1)
-#print(map)
+map /= level+1
 
 # pretty print
 shades = ['  ', '░░', '▒▒', '▓▓', '██']

@@ -7,7 +7,7 @@ In this code snippet I created noise maps in python. Every `(x,y)` coordinate wi
 Random noise is random :) The values for each coordinate are completely independent. This is easy to implement:
 
 ```python
-map = np.array([random.random() for x in range(size**2)]).reshape((size,size))
+map = np.random.rand(size,size)
 ```
 
 In a square of dimensions `size * size` random values are assigned. I then printed the noise map with unicode shades to make the result easier to comprehend.
@@ -85,8 +85,8 @@ Adding different levels is done in this while loop:
 ```python
 while 2**level < size:
     a = int(size/2**level)
-    random_grid = np.array([random.choice((0,1)) for x in range(a**2)]).reshape((a,a))
-    map += scale_up(random_grid ,2**level)
+    random_grid = np.random.randint(0, 1+1, size=(a,a))
+    map += scale_up(random_grid, 2**level)
     level += 1
 ```
 

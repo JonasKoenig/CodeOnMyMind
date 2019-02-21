@@ -1,13 +1,10 @@
-import random
 import numpy as np
 
-
 size = 32
-random.seed(42)
+np.random.seed(42)
 
 # normalized random noise map
-map = np.array([random.random() for x in range(size**2)]).reshape((size,size))
-
+map = np.random.rand(size,size)
 
 # pretty print
 shades = ['  ', '░░', '▒▒', '▓▓', '██']
