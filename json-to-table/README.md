@@ -65,3 +65,5 @@ Somewhere along the way this project became a lesson in reusing existing solutio
 
 ## Outlook
 One thing I could improve on is sorting. Right now sorting treats every data type the same. When sorted, all columns are in lexicographical order which does not make too much sense for e.g. roman numerals. A generic sorting algorithm with a compare function as an argument could enable sorting of all kinds of data types.
+
+The JSON to table conversion only works with flat lists. Handling nested dictionaries might be difficult, but a handy enhancement.
