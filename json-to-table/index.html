@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JSON to table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<button onclick="importJSON()">Import File</button>
+<button class="accordionButton">Filter</button>
+<div class="accordionPanel">
+  <select id="filterSelector">
+    <!-- dropdown menu to select column -->
+  </select>
+  <input type="text" id="filterString" onkeyup="updateFilter()" placeholder="Filter by ...">
+</div>
+
+  <table id="list">
+    <!-- JSON data -->
+  </table>
+
+  <script src="data.json"></script>
+
+  <script src="js/filter.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/sort.js"></script>
+  <script src="js/import.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* accordion for filtering ---------------------------------------------------*/
+
+button {
+  background-color: white;
+  color: MediumSeaGreen;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: WhiteSmoke;
+  text-decoration: underline;
+}
+
+.accordionPanel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 1em;
+}
+
+.accordionPanel > select, input {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid LightGray;
+  outline: none;
+}
+
+.accordionPanel > select:hover, input:hover {
+  background-color: WhiteSmoke;
+}
+
+
+/* table ---------------------------------------------------------------------*/
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid LightGray;
+  border-radius: 8px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  color: MediumSeaGreen;
+  cursor: pointer;
+  padding: 16px;
+}
+
+th:hover {
+  text-decoration: underline;
+}
+
+td {
+  padding: 10px 16px;
+  border-top: 1px solid LightGray;
+}
+
+tr:hover {
+  background-color: WhiteSmoke;
+}

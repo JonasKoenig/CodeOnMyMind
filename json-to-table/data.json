@@ -1,0 +1,54 @@
+data = [{
+    "Episode": "IV",
+    "Title": "A New Hope",
+    "Director": "George Lucas",
+    "Release Date": "1977-05-25"
+  },
+  {
+    "Episode": "V",
+    "Title": "The Empire Strikes Back",
+    "Director": "Irvin Kershner",
+    "Release Date": "1980-05-21"
+  },
+  {
+    "Episode": "VI",
+    "Title": "Return of the Jedi",
+    "Director": "Richard Marquand",
+    "Release Date": "1983-05-25"
+  },
+  {
+    "Episode": "I",
+    "Title": "The Phantom Menace",
+    "Director": "George Lucas",
+    "Release Date": "1999-05-19"
+  },
+  {
+    "Episode": "II",
+    "Title": "Attack of the Clones",
+    "Director": "George Lucas",
+    "Release Date": "2002-05-16"
+  },
+  {
+    "Episode": "III",
+    "Title": "Revenge of the Sith",
+    "Director": "George Lucas",
+    "Release Date": "2005-05-19"
+  },
+  {
+    "Episode": "VII",
+    "Title": "The Force Awakens",
+    "Director": "J. J. Abrams",
+    "Release Date": "2015-12-18"
+  },
+  {
+    "Episode": "VIII",
+    "Title": "The Last Jedi",
+    "Director": "Rian Johnson",
+    "Release Date": "2017-12-15"
+  },
+  {
+    "Episode": "IX",
+    "Director": "J. J. Abrams",
+    "Release Date": "2019-12-20"
+  },
+]

@@ -11,7 +11,7 @@ for sentence in blob.sentences:
     print(len(sentence.words))
 ```
 
-The script loads the text from a file and then disects it using TextBlob. Then I showcase some features one sentence at a time. This example is a sentence from the opening text crawl from '_Star Wars: Episode IV – A New Hope_'.
+The script loads the text from a file and then dissects it using TextBlob. Then I showcase some features one sentence at a time. This example is a sentence from the opening text crawl from '_Star Wars: Episode IV – A New Hope_'.
 
 ```
 $ python script.py
