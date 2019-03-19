@@ -58,6 +58,7 @@ Create two variable and set them to numbers. Print their sum.
 
 <details>
 <summary>Solution</summary>
+  
 ```python
 x = 1
 y = 41
@@ -82,6 +83,7 @@ The indentation of the print function is important. Python uses indentation to d
 
 <details>
 <summary>Larger Example</summary>
+  
 ```python
 x = 42
 if (x == 1):
@@ -93,6 +95,7 @@ print("No indentation - print this no matter what")
 
 <details>
 <summary>Solution</summary>
+  
 ```python
 x = 1
 if (x == 1):
@@ -124,6 +127,7 @@ Define and call a function `add (x,y)` that returns the sum of its arguments.
 
 <details>
 <summary>Solution</summary>
+  
 ```python
 def add(x,y):
   return x+y
