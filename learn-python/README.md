@@ -1,17 +1,19 @@
 # Learn Python
 
+In my opinion Python is a great language for both beginners and veterans. It has a very easy syntax resulting in a steep learning curve. Shorthands allow more experienced programmers to write elegant code using only a few lines of code.
+
 <details>
-<summary>All Lessons</summary>
+<summary><b>All Lessons</b></summary>
+
 - [Lesson 01](#lesson-01)
 - [Lesson 02](#lesson-02)
 - [Lesson 03](#lesson-03)
 - [Lesson 04](#lesson-04)
+
 </details>
 
 <details>
-  <summary>Installation</summary>
-
-  In my opinion Python is a great language for both beginners and veterans. It has a very easy syntax resulting in a steep learning curve. Shorthands allow more experienced programmers to write elegant code using only a few lines of code.
+  <summary><b>Installation</b></summary>
 
   Beware of the two Python versions. Python 2.7 is still used, but support for it will stop in early 2020. Therefore this tutorial will use Python 3.
 
@@ -31,7 +33,7 @@
   user@ubuntu:~/.../learn-python$ python script
   ```
 
-  Alternatively you can use an [Online Interpreter](https://www.onlinegdb.com/online_python_compiler) to run the code. This way you do not need to install anything, but code might run slower.
+  - Alternatively you can use an [Online Interpreter](https://www.onlinegdb.com/online_python_compiler) to run the code. This way you do not need to install anything, but code might run slower.
 
   If you made it through the installation process, the cumbersome part is behind you and we can get started :)
 
@@ -59,16 +61,14 @@ print(myVariable)
 **Task:** Create two variable and set them to numbers. Print their sum.
 
 <details>
-<summary>
-**Solution**
-</summary>
+<summary><b>Solution</b></summary>
 
 ```python
 x = 1
 y = 41
 print(x+y)
 ```
-result: `42`
+Result: `42`
 </details>
 
 [Back to top &#8679;](#learn-python)
@@ -86,9 +86,7 @@ if (x >= 0):
 The indentation of the print function is important. Python uses indentation to determine which commands belong to which.
 
 <details>
-<summary>
-**Larger Example**
-</summary>
+<summary><b>Larger Example</b></summary>
 
 ```python
 x = 42
@@ -102,16 +100,14 @@ print("No indentation - print this no matter what")
 **Task:** Create an if-statement that prints a message, if `x` is equal to 1.
 
 <details>
-<summary>
-**Solution**
-</summary>
+<summary><b>Solution</b></summary>
 
 ```python
 x = 1
 if (x == 1):
     print("x is equal to one")
 ```
-result: `x is equal to one`
+Result: `x is equal to one`
 </details>
 
 [Back to top &#8679;](#learn-python)
@@ -136,9 +132,7 @@ print(determineSign(42))
 **Task:** Define and call a function `add (x,y)` that returns the sum of its arguments.
 
 <details>
-<summary>
-**Solution**
-</summary>
+<summary><b>Solution</b></summary>
 
 ```python
 def add(x,y):
@@ -146,7 +140,7 @@ def add(x,y):
 
 print(add(2,5))
 ```
-result: `7`
+Result: `7`
 </details>
 
 [Back to top &#8679;](#learn-python)
