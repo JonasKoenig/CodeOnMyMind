@@ -1,4 +1,4 @@
-## Rescaling and Lerp
+# Rescaling and Lerp
 
 This is actually not code, but an important piece of math. With this equation, we transform a value from one scale to another. For Example, there are two ways of rating hotels. One is a score between zero and ten `[0,10]` and the other is a rating from one to five stars `[1,5]`.
 

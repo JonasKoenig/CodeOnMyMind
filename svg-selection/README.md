@@ -1,4 +1,4 @@
-## Selections via SVG in CSS
+# Selections via SVG in CSS
 
 <img src="selection.gif" alt="GIF showing selection effect">
 

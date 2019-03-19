@@ -1,4 +1,4 @@
-## Centering DIV Elements
+# Centering DIV Elements
 
 In this code example I build a work-out clock. At some point I wanted to center the clock both horizontally and vertically.
 
