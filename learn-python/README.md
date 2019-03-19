@@ -1,13 +1,13 @@
 # Learn Python
 
-[Lesson 01](#lesson-01)
-[Lesson 02](#lesson-02)
-[Lesson 03](#lesson-03)
-[Lesson 04](#lesson-04)
+- [Lesson 01](#lesson-01)
+- [Lesson 02](#lesson-02)
+- [Lesson 03](#lesson-03)
+- [Lesson 04](#lesson-04)
 
 
 <details>
-  <summary>**Installation**</summary>
+  <summary>Installation</summary>
 
   In my opinion Python is a great language for both beginners and veterans. It has a very easy syntax resulting in a steep learning curve. Shorthands allow more experienced programmers to write elegant code using only a few lines of code.
 
@@ -57,13 +57,13 @@ print(myVariable)
 Create two variable and set them to numbers. Print their sum.
 
 <details>
-  <summary>Solution</summary>
-  ```python
-  x = 1
-  y = 41
-  print(x+y)
-  ```
-  result: `42`
+<summary>Solution</summary>
+```python
+x = 1
+y = 41
+print(x+y)
+```
+result: `42`
 </details>
 
 [Back to top](#learn-python)
@@ -81,24 +81,24 @@ if (x >= 0):
 The indentation of the print function is important. Python uses indentation to determine which commands belong to which.
 
 <details>
-  <summary>Larger Example</summary>
-  ```python
-  x = 42
-  if (x == 1):
-      print("Print this if x is equal to one")
+<summary>Larger Example</summary>
+```python
+x = 42
+if (x == 1):
+    print("Print this if x is equal to one")
 
-  print("No indentation - print this no matter what")
-  ```
+print("No indentation - print this no matter what")
+```
 </details>
 
 <details>
-  <summary>Solution</summary>
-  ```python
-  x = 1
-  if (x == 1):
-      print("x is equal to one")
-  ```
-  result: `x is equal to one`
+<summary>Solution</summary>
+```python
+x = 1
+if (x == 1):
+    print("x is equal to one")
+```
+result: `x is equal to one`
 </details>
 
 [Back to top](#learn-python)
@@ -123,14 +123,14 @@ print(determineSign(42))
 Define and call a function `add (x,y)` that returns the sum of its arguments.
 
 <details>
-  <summary>Solution</summary>
-  ```python
-  def add(x,y):
-    return x+y
+<summary>Solution</summary>
+```python
+def add(x,y):
+  return x+y
 
-  print(add(2,5))
-  ```
-  result: `7`
+print(add(2,5))
+```
+result: `7`
 </details>
 
 [Back to top](#learn-python)
