@@ -67,3 +67,5 @@ Somewhere along the way this project became a lesson in reusing existing solutio
 One thing I could improve on is sorting. Right now sorting treats every data type the same. When sorted, all columns are in lexicographical order which does not make too much sense for e.g. roman numerals. A generic sorting algorithm with a compare function as an argument could enable sorting of all kinds of data types.
 
 The JSON to table conversion only works with flat lists. Handling nested dictionaries might be difficult, but a handy enhancement.
+
+**Edit:** Shortly after publishing this I was made aware of [BreedJS](http://jjppof.github.io/breedjs/#about). It is a jQuery plugin, which takes care of sorting, filtering and pagination. At first I thought using it might have saved me some time, but would have also prevented me from tinkering and refactoring. Seeing as that is kind of the point of this repository, I am glad I did it myself :)
