@@ -1,10 +1,12 @@
 # Learn Python
 
+<details>
+<summary>All Lessons</summary>
 - [Lesson 01](#lesson-01)
 - [Lesson 02](#lesson-02)
 - [Lesson 03](#lesson-03)
 - [Lesson 04](#lesson-04)
-
+</details>
 
 <details>
   <summary>Installation</summary>
@@ -37,13 +39,13 @@
 
 ## Lesson 01
 
-Write `print("Hello World!")` to your script file and save. If you now execute your script on the command line, it should say 'Hello World!'.
+**Task:** Write `print("Hello World!")` to your script file and save. If you now execute your script on the command line, it should say 'Hello World!'.
 
 `print()` is a build in function that writes its arguments (in the parenthesis) to the command line. The argument in this case is `"Hello World!"`.
 
 If everything worked out, clear the script file or create a new one for the next lesson.
 
-[Back to top](#learn-python)
+[Back to top &#8679;](#learn-python)
 
 ## Lesson 02
 
@@ -54,11 +56,13 @@ myVariable = "some stored value"
 print(myVariable)
 ```
 
-Create two variable and set them to numbers. Print their sum.
+**Task:** Create two variable and set them to numbers. Print their sum.
 
 <details>
-<summary>Solution</summary>
-  
+<summary>
+**Solution**
+</summary>
+
 ```python
 x = 1
 y = 41
@@ -67,7 +71,7 @@ print(x+y)
 result: `42`
 </details>
 
-[Back to top](#learn-python)
+[Back to top &#8679;](#learn-python)
 
 ## Lesson 03
 
@@ -82,8 +86,10 @@ if (x >= 0):
 The indentation of the print function is important. Python uses indentation to determine which commands belong to which.
 
 <details>
-<summary>Larger Example</summary>
-  
+<summary>
+**Larger Example**
+</summary>
+
 ```python
 x = 42
 if (x == 1):
@@ -93,9 +99,13 @@ print("No indentation - print this no matter what")
 ```
 </details>
 
+**Task:** Create an if-statement that prints a message, if `x` is equal to 1.
+
 <details>
-<summary>Solution</summary>
-  
+<summary>
+**Solution**
+</summary>
+
 ```python
 x = 1
 if (x == 1):
@@ -104,7 +114,7 @@ if (x == 1):
 result: `x is equal to one`
 </details>
 
-[Back to top](#learn-python)
+[Back to top &#8679;](#learn-python)
 
 ## Lesson 04
 
@@ -123,11 +133,13 @@ print(determineSign(-1))
 print(determineSign(42))
 ```
 
-Define and call a function `add (x,y)` that returns the sum of its arguments.
+**Task:** Define and call a function `add (x,y)` that returns the sum of its arguments.
 
 <details>
-<summary>Solution</summary>
-  
+<summary>
+**Solution**
+</summary>
+
 ```python
 def add(x,y):
   return x+y
@@ -137,4 +149,4 @@ print(add(2,5))
 result: `7`
 </details>
 
-[Back to top](#learn-python)
+[Back to top &#8679;](#learn-python)
