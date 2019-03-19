@@ -11,6 +11,7 @@ The full history of this repository aims to show how this repository developed a
 
 | Date | Project | Description | Tags |
 |:-----|:--------|:------------|:----:|
+| 20. Mar 2019 | [LaTeX Cheat Sheet](./latex-cheat-sheet) | Nifty stuff for LaTeX | latex |
 | 19. Mar 2019 | [LaTeX Cheat Sheet](./latex-cheat-sheet) | Nifty stuff for LaTeX | latex |
 | 18. Mar 2019 | [JSON to table](./json-to-table) | Increase readability in JSON | html, js |
 | 20. Feb 2019 | [Noise](./noise) | Random vs. Smooth Noise | python |
