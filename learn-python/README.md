@@ -3,6 +3,7 @@
 In my opinion Python is a great language for both beginners and veterans. It has a very easy syntax resulting in a steep learning curve. Shorthands allow more experienced programmers to write elegant code using only a few lines of code.
 
 - [Basics](./basics): Hello World, Variables, If-Statements and Functions
+- [Loops](./loops): For-Loops, Arrays, Foreach-Loops and While-Loops
 - to be continued ...
 
 <details>

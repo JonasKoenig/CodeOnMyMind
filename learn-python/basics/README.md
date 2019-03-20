@@ -2,10 +2,10 @@
 
 Just in case you missed the installation guide - [here](..) it is again. See solutions.py for all solutions for the following lessons.
 
-- [Lesson 01](#lesson-01)
-- [Lesson 02](#lesson-02)
-- [Lesson 03](#lesson-03)
-- [Lesson 04](#lesson-04)
+- [Lesson 01](#lesson-01): Hello World
+- [Lesson 02](#lesson-02): Variables
+- [Lesson 03](#lesson-03): If-Statements
+- [Lesson 04](#lesson-04): Functions
 
 ## Lesson 01
 
