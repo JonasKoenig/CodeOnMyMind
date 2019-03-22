@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Colors</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="panel" id="colorDisplay">
+      <h3>Pick a Color:</h3>
+      <input type="color" id="colorPicker" class="code" value="#FF0000" onchange="hexOnChange(this)">
+      <table id="colorInputs">
+        <tr>
+          <td>Hex:</td>
+          <td><input type="text" maxlength="7" id="colorHex" class="code" value="#FF0000" onchange="hexOnChange(this)"></td>
+        </tr>
+        <tr>
+          <td>R:</td>
+          <td><input type="number" max="255" min="0" id="colorR" class="code" value="255" onchange="componentOnChange(this)"></td>
+        </tr>
+        <tr>
+          <td>G:</td>
+          <td><input type="number" max="255" min="0" id="colorG" class="code" value="0" onchange="componentOnChange(this)"></td>
+        </tr>
+        <tr>
+          <td>B:</td>
+          <td><input type="number" max="255" min="0" id="colorB" class="code" value="0" onchange="componentOnChange(this)"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h3>CSS:</h3>
+      <p class="description">
+        <a href="https://www.w3schools.com/colors/colors_names.asp">Predefined CSS colors</a>
+      </p>
+      <input class="code" type="text" id="css-hex" value="#FF0000" readonly>
+      <input class="code" type="text" id="css-rgb" value="rgb(255,0,0)" readonly>
+    </div>
+
+    <div class="panel">
+      <h3>Python:</h3>
+      <p class="description">
+        <a href="https://matplotlib.org/examples/color/named_colors.html">Predefined Python colors</a>
+      </p>
+      <input class="code" type="text" id="python" value="c = '#FF0000'" readonly>
+    </div>
+
+    <div class="panel">
+      <h3>LaTeX:</h3>
+      <p class="description">
+        <a href="https://en.wikibooks.org/wiki/LaTeX/Colors">Package xcolor</a> with <a href="https://en.wikibooks.org/wiki/LaTeX/Colors#Predefined_colors">predefined colors</a>
+      </p>
+      <input class="code" type="text" id="latex-html" value="\definecolor{name}{HTML}{FFFFFF}" readonly>
+      <input class="code" type="text" id="latex-RGB" value="\definecolor{name}{RGB}{255,0,0}" readonly>
+      <input class="code" type="text" id="latex-rgb" value="\definecolor{name}{rgb}{1,0,0}" readonly>
+    </div>
+
+    <div class="panel">
+      <h3>Processing:</h3>
+      <p></p>
+      <input class="code" type="text" id="processing-hex" value="color c = #FF0000;" readonly>
+      <input class="code" type="text" id="processing-rgb" value="color c = color(255,0,0);" readonly>
+    </div>
+  </div>
+
+  <script src="js/input.js" charset="utf-8"></script>
+  <script src="js/copy.js" charset="utf-8"></script>
+</body>
+
+</html>

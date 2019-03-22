@@ -1,0 +1,66 @@
+html, body {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: block;
+  max-width: 498px;
+  margin: 0 auto;
+}
+
+.panel {
+  text-align: left;
+  background-color: WhiteSmoke;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.panel>* {
+  margin: 3px 0px;
+}
+
+.description {
+  font-size: 11px;
+}
+
+.code {
+  width: 420px;
+  padding: 3px;
+  font-size: 14px;
+  font-family: monospace;
+  border: 1px solid black;
+}
+
+td>.code {
+  width: 284px;
+}
+
+button {
+  padding: 3px;
+  background-color: white;
+  border: 1px solid black;
+  border-left: none;
+}
+
+#colorDisplay>div, table {
+  display: inline-block;
+}
+
+#colorPicker {
+  padding: 3px;
+  border: none;
+  background: none;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  outline: 0;
+}
+
+#colorInputs>* {
+  display: block;
+}
