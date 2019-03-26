@@ -2,12 +2,11 @@
 
 # Code On My Mind
 
-My name is Jonas and I study Computer Science in Tübingen, Germany. I am creating this repository to keep track of nifty code snippets and techniques I learned. I share this with you, not because something like this has never been done before, but to practice explaining code I wrote. Feel free to reuse and modify any code you see here.
+My name is Jonas and I study Computer Science in Tübingen, Germany. I am creating this repository to keep track of nifty code snippets and techniques I learned. I share this with you, not because something like this has never been done before, but to practice explaining code. Feel free to reuse and modify any code you see here.
 
 ## History
 
 The full history of this repository aims to show how this repository developed and which projects were added when.
-
 
 | Date | Project | Description | Tags |
 |:-----|:--------|:------------|:----:|
@@ -20,3 +19,12 @@ The full history of this repository aims to show how this repository developed a
 | 10. Jan 2019 | [Center-center](./projects/center-center) | Centering divs horizontally and vertically | html, css |
 | 17. Sep 2018 | [Rescaling and Lerp](./projects/rescaling-and-lerp) | Linear interpolation between two ranges | processing, math |
 | 27. Aug 2018 | [Selections via SVG](./projects/svg-selection) | ‘marching ants’ animation using svg in css | svg, css |
+
+## How I explain code
+
+<details>
+<summary>Provide context</summary>
+In an effort to appeal to a wider audience, I decided to write a short intro for every project. Explaining _what_ I do is the point of this repository. Explaining _why_ I do it is what makes it worth your while. I find that providing a little context goes a long way.
+</details>
+
+<span style="color:gray">► To be continued ...</span>
