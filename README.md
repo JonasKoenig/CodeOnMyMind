@@ -51,3 +51,7 @@ random_grid = np.random.randint(0, 2, size=(a,a)) # give it a name
 
 I will try to incorporate this into my explanations.
 </details>
+
+## Contact
+
+Please make use of the [Issues](https://github.com/JonasKoenig/CodeOnMyMind/issues)-Page on GitHub. As I am learning, I am thankful for all typos and bugs you report. If you have any questions or feedback on existing projects or suggestions on future projects, create an issue and I will respond as soon as I can.
