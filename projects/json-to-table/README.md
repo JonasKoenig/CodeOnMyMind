@@ -2,9 +2,19 @@
 
 In this project I attempted to make JSON files more readable by converting them to a table with sorting and filtering.
 
-![table with sorting and filtering](./table.gif)
+JSON is short for _JavaScript Object Notation_. Its data structure is a dictionary. That is to say, data in a JSON file consists of objects, which in turn are made of `"key": <value>`-pairs. The key is a name for the value that is to come and the value is one the following:
+
+- boolean: `true` or `false`
+- number: a combination of the digits `0-9` and a decimal point or a sign for negative values
+- string: text or a sequence of unicode characters encapsuled by double quotation marks `"..."`
+- object: this allows for _nesting_ - an object within an object
+- empty value: `null`
+
+_Note:_ I hope I didn't just insult your intelligence by explaining what a number is :)
 
 ## What does it do?
+
+![table with sorting and filtering](./table.gif)
 
 ### 1. Import
 
@@ -39,7 +49,7 @@ function bubbleSort(n) {
 
 ### 3. Filter
 
-One can filter the rows by selecting a column and typing a value. Filtering is case insensitive. Note the compact syntax of the comparing if-statement: `if-statement ? true-value : false-value`. Shorthands like this help with readability (in my opinion).
+One can filter the rows by selecting a column and typing a value. Filtering is case insensitive, so "this" is equal to "This". Note the compact syntax of the comparing if-statement: `if-statement ? true-value : false-value`. Shorthands like this help with readability (in my opinion).
 
 ```javascript
 function applyFilter(string, column) {
@@ -68,4 +78,4 @@ One thing I could improve on is sorting. Right now sorting treats every data typ
 
 The JSON to table conversion only works with flat lists. Handling nested dictionaries might be difficult, but a handy enhancement.
 
-**Edit:** Shortly after publishing this I was made aware of [BreedJS](http://jjppof.github.io/breedjs/#about). It is a jQuery plugin, which takes care of sorting, filtering and pagination. At first I thought using it might have saved me some time, but would have also prevented me from tinkering and refactoring. Seeing as that is kind of the point of this repository, I am glad I did it myself :)
+[BreedJS](http://jjppof.github.io/breedjs/#about) is a jQuery plugin, which takes care of sorting, filtering and pagination. At first I thought using it might have saved me some time, but would have also prevented me from tinkering and refactoring. Seeing as that is kind of the point of this repository, I am glad I did it myself :)
