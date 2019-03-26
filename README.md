@@ -27,4 +27,4 @@ The full history of this repository aims to show how this repository developed a
 In an effort to appeal to a wider audience, I decided to write a short intro for every project. Explaining _what_ I do is the point of this repository. Explaining _why_ I do it is what makes it worth your while. I find that providing a little context goes a long way.
 </details>
 
-<span style="color:gray">► To be continued ...</span>
+To be continued ...
