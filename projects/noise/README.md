@@ -1,6 +1,8 @@
 # Experimenting with Noise
 
-In this code snippet I created noise maps in python. Every `(x,y)` coordinate will be assigned a random greyscale value. These noise maps can be used as height maps, to distribute ressources or as textures in video games.
+In this code snippet I create 2D noise maps in python.
+
+_What are noise maps and what are they good for?_ One trend in modern video games is procedural generation. In procedural generation the map or non-player characters are not designed by a human, but generated according to rules, while the game is running. 2D noise maps assign a greyscale value to every `(x,y)` coordinate. These noise maps may be used as height maps - dark is low terrain, bright is a mountain. They can also distribute resources over a map or act as a texture.
 
 ## Random Noise
 
@@ -30,7 +32,7 @@ This yields a very coarse noise map:
 
 ## Level-of-Detail Noise
 
-Sometimes noise needs to be smoother. For example, if the noise map is used as a height map, random noise would result in a blocky map with lots of inaccessible columns. In an attempt to create a smoother noise map I developed an approach where smaller random noise maps are scaled up and added on top of each other. Here is the idea applied to a smaller example:
+Sometimes noise needs to be smoother. For example, if the noise map is used as a height map, random noise would result in a blocky map with lots of inaccessible columns. In an attempt to create **coherent noise** I developed an approach where smaller random noise maps are scaled up and added on top of each other. Here is the idea applied to a small example:
 
 #### Level 0
 initial random noise map:
@@ -98,4 +100,6 @@ There are still some visible grid patterns, but it is much smoother than Random 
 
 
 ## Outlook
-In most game engines I have seen use Perlin Noise. This is a much more sophisticated method of generating smooth noise. I might try to implement it in the future.
+Most game engines use an algorithm called Perlin Noise. This is a much more sophisticated method of generating coherent noise. I might try to implement it in the future.
+
+Also: Noise can be useful in higher dimensions. I chose 2D, because it simplifies explaining the concept.
