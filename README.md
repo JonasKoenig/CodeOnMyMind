@@ -1,4 +1,4 @@
-<img src="common/codeonmymind.png" alt="Code On My Mind Icon" width="100px" height="auto">
+<img src="common/codeonmymind.png" alt="Code On My Mind Icon">
 
 # Code On My Mind
 
