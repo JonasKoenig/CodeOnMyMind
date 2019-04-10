@@ -1,5 +1,3 @@
-<img src="common/codeonmymind.png" alt="Code On My Mind Icon">
-
 # Code On My Mind
 
 My name is Jonas and I study Computer Science in Tübingen, Germany. I am creating this repository to keep track of nifty code snippets and techniques I learned. I share this with you, not because something like this has never been done before, but to practice explaining code. Feel free to reuse and modify any code you see here.
