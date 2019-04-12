@@ -35,7 +35,6 @@ body {
 
 .card {
   position: relative;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 10px;
   cursor: pointer;
@@ -52,7 +51,6 @@ body {
 
 .back, .front {
   position: absolute;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -64,20 +62,18 @@ body {
 
 .front:hover {
   transition: all .1s;
-  transform: translate(-5px) rotateY(15deg);
+  transform: translate(5px) rotateY(15deg) rotateZ(-2deg);
   transform-origin: right;
-  box-shadow: -7px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -7px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .back {
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background: white no-repeat center center / cover;
   border: 5px solid #028288;
 }
 
 .selected {
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   cursor: default;
 }
@@ -97,18 +93,17 @@ body {
   z-index: 1;
   transform: rotateY(180deg) scale(2);
   box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.4);
-
 }
 
 .zoom {
   transition: all .4s, z-index 0s step-start;
-  z-index: 1;
+  z-index: 2;
   transform: rotateY(180deg) scale(2);
   box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes flash {
-  50%  {
-    transform: rotateY(180deg) scale(1.05);
+  50% {
+    transform: rotateY(180deg) scale(1.03);
   }
 }

@@ -1,5 +1,5 @@
 # Memory Game
 
 - Intro
-- some GIF
+- GIF
 - Challenges
