@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: transform .4s ease-in-out;
+  -o-transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+}
+
+body {
+  margin: 20px 0;
+  background: #FFFEF1;
+  overflow: hidden;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 680px;
+  margin: 0 auto;
+  perspective: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 10px;
+  cursor: pointer;
+  transition: all .2s, z-index 0s step-end;
+  transition-delay: 0s, .2s;
+  z-index: 0;
+}
+
+.card, .back, .front {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.back, .front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  transition: all .1s;
+  background: url('images/logo.jpg') white no-repeat center center / contain;
+  border: 5px solid #028288;
+}
+
+.front:hover {
+  transition: all .1s;
+  transform: translate(-5px) rotateY(15deg);
+  transform-origin: right;
+  box-shadow: -7px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: white no-repeat center center / cover;
+  border: 5px solid #028288;
+}
+
+.selected {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  cursor: default;
+}
+
+.match {
+  transform: rotateY(180deg);
+  cursor: default;
+}
+
+.match>.back {
+  animation: flash .2s;
+}
+
+.match:hover {
+  transition: all .1s, z-index 0s step-start;
+  transition-delay: .2s, .2s;
+  z-index: 1;
+  transform: rotateY(180deg) scale(2);
+  box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.zoom {
+  transition: all .4s, z-index 0s step-start;
+  z-index: 1;
+  transform: rotateY(180deg) scale(2);
+  box-shadow: 0px 7px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes flash {
+  50%  {
+    transform: rotateY(180deg) scale(1.05);
+  }
+}
