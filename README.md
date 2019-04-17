@@ -8,6 +8,7 @@ The full history of this repository aims to show how this repository developed a
 
 | Date | Project | Description | Tags |
 |:-----|:--------|:------------|:----:|
+| 17. Apr 2019 | [Memory Game](./projects/memory-game) | The classic game for your computer | html, css, js |
 | 22. Mar 2019 | [Colors](./projects/colors) | Converting color formats in different languages | html, css, js |
 | 20. Mar 2019 | [Learn Python](./projects/learn-python) | A beginners guide to python | python |
 | 19. Mar 2019 | [LaTeX Cheat Sheet](./projects/latex-cheat-sheet) | Nifty stuff for LaTeX | latex |
