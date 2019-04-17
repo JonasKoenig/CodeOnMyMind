@@ -1,7 +1,7 @@
 'use strict';
 
 var gameGrid = cardsArray.sort(function() {
-  return 0.5;// - Math.random();
+  return 0.5 - Math.random();
 });
 
 var firstGuess = '';
