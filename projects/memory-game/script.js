@@ -1,7 +1,7 @@
 'use strict';
 
 var gameGrid = cardsArray.sort(function() {
-  return 0.5; // - Math.random();
+  return 0.5;// - Math.random();
 });
 
 var firstGuess = '';
@@ -79,7 +79,7 @@ grid.addEventListener('click', function(event) {
       }
       setTimeout(resetGuesses, 2000);
     }
-    
+
     if (previousTarget) previousTarget.parentNode.classList.remove('zoom');
     clicked.parentNode.classList.add('zoom');
     previousTarget = clicked;
