@@ -1,3 +1,6 @@
+[⭠ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[⭳ Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Frescaling-and-lerp)
+
 # Rescaling and Lerp
 
 This is actually not code, but an important piece of math. With this equation, we transform a value from one scale to another. For Example, there are two ways of rating hotels. One is a score between zero and ten `[0,10]` and the other is a rating from one to five stars `[1,5]`.

@@ -1,4 +1,4 @@
-- [Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
+<- [Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
 
 # How I explain code
 

@@ -1,3 +1,6 @@
+[⭠ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[⭳ Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Flatex-cheat-sheet)
+
 # LaTeX Cheat Sheet
 
 Now for the science part in computer science. Most scientific papers are written in LaTeX, a mark up language from the 80s. This cheat sheet is a collection of useful things I encountered during my studies.

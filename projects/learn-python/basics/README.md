@@ -1,3 +1,5 @@
+[⭠ Back to learn page](https://github.com/JonasKoenig/CodeOnMyMind/tree/master/projects/learn-python)
+
 # Learn Python: Basics
 
 Just in case you missed the installation guide - [here](..) it is again. See solutions.py for all solutions for the following lessons.

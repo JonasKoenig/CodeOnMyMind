@@ -1,3 +1,5 @@
+[⭠ Back to learn page](https://github.com/JonasKoenig/CodeOnMyMind/tree/master/projects/learn-python)
+
 # Learn Python: Loops
 
 - [Lesson 01](#lesson-01): For-Loops

@@ -1,3 +1,6 @@
+[⭠ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[⭳ Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fjson-to-table)
+
 # JSON to table
 
 In this project I attempted to make JSON files more readable by converting them to a table with sorting and filtering.

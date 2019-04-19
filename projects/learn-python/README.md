@@ -1,3 +1,6 @@
+[⭠ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[⭳ Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Flearn-python)
+
 # Learn Python
 
 In my opinion Python is a great language for both beginners and veterans. It has a very easy syntax resulting in a steep learning curve. Shorthands allow more experienced programmers to write elegant code using only a few lines of code. This tutorial is aimed at beginners in programming.

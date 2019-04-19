@@ -1,3 +1,6 @@
+[⭠ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[⭳ Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fnoise)
+
 # Experimenting with Noise
 
 In this code snippet I create 2D noise maps in python.
