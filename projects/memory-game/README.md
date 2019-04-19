@@ -1,3 +1,6 @@
+- [Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fmemory-game)
+- [Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
+
 # Memory Game
 
 This project is a simple memory game I made for a friend. I decided to do it in JavaScript and CSS, because I did not know which machine this game was going to run on - and everyone has Browser to display HTML.
