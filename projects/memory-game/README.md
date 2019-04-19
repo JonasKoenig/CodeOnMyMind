@@ -6,7 +6,7 @@ This project is a simple memory game I made for a friend. I decided to do it in 
 
 ## How to play
 
-1. Download the code
+1. [Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fmemory-game) the code
 2. Open the `index.html` file in your browser
 
 ## How to change the images
