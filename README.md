@@ -4,7 +4,7 @@ My name is Jonas and I study Computer Science in Tübingen, Germany. I am creati
 
 ## History
 
-The full history of this repository aims to show how this repository developed and which projects were added when. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page. Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
+The full history of this repository aims to show how this repository developed and which projects were added when. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
 
 | Date | Project | Description | Tags |
 |:-----|:--------|:------------|:----:|
