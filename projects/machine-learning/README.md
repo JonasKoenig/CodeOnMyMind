@@ -24,7 +24,7 @@ The different kinds of machine learning are distinguished by their input. Mainly
 
 Example: We start with a lot of e-mails, that humans have labeled either _'spam'_ or _'no spam'_ beforehand. Knowing which are which, a learning algorithm can learn, what characterizes spam mail. After learning from the labeled training data, the algorithm can assign labels to new incoming mail and discard spam mail.
 
-Generally speaking supervised learning requires a dataset _including_ the information we trying to learn. We need the correct output for every data input. We then try to link the input properties to their given output properties. The goal is to learn a function, that can predict the output property for any future input.
+Generally speaking, supervised learning requires a dataset _including_ the information we are trying to learn. We need the correct output for every data input. We then try to link the input properties to their given output properties. The goal is to learn a function, that can predict the output property for any future input.
 
 The following two applications of supervised learning are distinguished by their output.
 
