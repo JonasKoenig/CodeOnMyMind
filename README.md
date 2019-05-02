@@ -37,4 +37,4 @@ See [this collection](./how-i-explain-code.md) of lessons I have learned in expl
 
 Please contact me on [Twitter](https://twitter.com/Code_On_My_Mind) or make use of the [Issues](https://github.com/JonasKoenig/CodeOnMyMind/issues)-Page on GitHub. As I am learning, I am thankful for all typos and bugs you report. If you have any questions or feedback on existing projects or suggestions on future projects, create an issue and I will respond as soon as I can.
 
-![Code On My Mind Banner](media/CodeOnMyMind980.png)
+![Code On My Mind Banner](media/CodeOnMyMind_Banner.png)
