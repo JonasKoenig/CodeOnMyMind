@@ -14,14 +14,14 @@ catfish_ys = catfish_xs/10 + np.random.normal(7, 2, n)
 fig = plt.figure()
 
 # unlabeled plot
-# plt.scatter(np.append(bass_xs, catfish_xs), np.append(bass_ys, catfish_ys), color='blue', marker='o', label='fish')
+plt.scatter(np.append(bass_xs, catfish_xs), np.append(bass_ys, catfish_ys), color='blue', marker='o', label='fish')
 
 # labeled plot
-plt.scatter(bass_xs, bass_ys, color='orange', marker='o', label='bass')
-plt.scatter(catfish_xs, catfish_ys, color='blue', marker='x', label='catfish')
+# plt.scatter(bass_xs, bass_ys, color='orange', marker='o', label='bass')
+# plt.scatter(catfish_xs, catfish_ys, color='blue', marker='x', label='catfish')
 
 # unlabeled new data
-plt.scatter([80], [12], color='red', marker='D', label='unlabeled')
+# plt.scatter([80], [12], color='red', marker='D', label='unlabeled')
 
 plt.xlabel('Length in cm')
 plt.ylabel('Weight in kg')

@@ -25,7 +25,7 @@ As you can see longer fish are heavier. Another useful information is the label 
 
 ![plot of all fish with their label](plots/classes.png)
 
-On average, the catfish are longer and heavier. Humans can distinguish the two kinds of fish in this plot, but can we make a machine do it?
+On average, the catfish are longer and heavier. Sorry to all fish enthusiasts if these numbers are wildly inaccurate. Humans can distinguish the two kinds of fish in this plot, but can we make a machine do it?
 
 ## Step 2: Classifying with kNN
 
@@ -33,8 +33,16 @@ Yes, of course we can make the machine do it. For every new unlabeled data point
 
 ![plot with new unlabeled data point](plots/unlabeled.png)
 
-For this to work in a formal setup, kNN needs a distance function, that is used to determine the k *'nearest'* neighbors. In this case we could use the Euclidean distance:
+For this to work in a formal setup, kNN needs a **distance function**, that is used to determine the k *'nearest'* neighbors. In this case we could use the Euclidean distance:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=dist(fish_1,&space;fish_2)&space;=&space;\sqrt{(length_1&space;-&space;length_2)^2&space;&plus;&space;(weight_1&space;-&space;weight_2)^2)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dist(fish_1,&space;fish_2)&space;=&space;\sqrt{(length_1&space;-&space;length_2)^2&space;&plus;&space;(weight_1&space;-&space;weight_2)^2)}" title="dist(fish_1, fish_2) = \sqrt{(length_1 - length_2)^2 + (weight_1 - weight_2)^2)}" /></a>
+<img src="https://latex.codecogs.com/gif.latex?distance(fish_1,fish_2)=\sqrt{(length_1-length_2)^2&plus;(weight_1-weight_2)^2)}" title="distance function" />
 
-Essentially, the square root of the length difference and weight difference squared.
+Using this distance function we can predict the label of one data point.
+
+## Step 3: Decision Boundary
+
+We can also learn what is called a decision boundary - a line separating the two groups. This will facilitate classifying larger amounts of new data.
+
+Code will follow
+
+## Step 4: Evaluating Accuracy

@@ -1,44 +1,29 @@
-train_data, train_labels =
-test_data, test_labels =
+import numpy as np
+import matplotlib.pyplot as plt
+
+np.random.seed(42)
+
+n = 50
+
+bass_xs = np.random.normal(55, 15, n)
+bass_ys = bass_xs/10 + np.random.normal(2, 2, n)
+
+catfish_xs = np.random.normal(80, 15, n)
+catfish_ys = catfish_xs/10 + np.random.normal(7, 2, n)
 
 fig = plt.figure()
-color = ['orange' if l == 1 else 'blue' for l in train_labels]
-plt.scatter(train_data[:, 0], train_data[:, 1], c=color)
-plt.xlim([-1, 7])
-plt.ylim([-4, 6])
-plt.show()
 
-def getNeighbors(test, k):
-    differences = np.array(train_data - test)**2                      # squared differences between coordinates
-    distances   = np.sqrt(np.sum(differences, axis=1))                # distances between test point and training set
-    return np.argsort(distances)[:k]                                  # sort by distance. return first k indices
+# unlabeled plot
+# plt.scatter(np.append(bass_xs, catfish_xs), np.append(bass_ys, catfish_ys), color='blue', marker='o', label='fish')
 
-def majorityVote(neighbors):
-    occurrences = np.bincount(train_labels[neighbors])                # number of occurences for each label
-    return np.argmax(occurrences)                                     # return most frequent label
+# labeled plot
+plt.scatter(bass_xs, bass_ys, color='orange', marker='o', label='bass')
+plt.scatter(catfish_xs, catfish_ys, color='blue', marker='x', label='catfish')
 
-def knnClassify(train_data, train_labels, test_data, k=1):
-    pred_labels = []
-    for test in test_data:                                            # loop through test_data
-        neighbors = getNeighbors(test, k)                             # get neighbors for one test point
-        pred_labels.append(majorityVote(neighbors))                   # append its majority to result
-    return np.array(pred_labels)
+# unlabeled new data
+plt.scatter([80], [12], color='red', marker='D', label='unlabeled')
 
-
-fig = plt.figure()
-color = ['orange' if l == 1 else 'blue' for l in pred_labels]
-plt.scatter(test_data[:, 0], test_data[:, 1], c=color)
-plt.xlim([-1, 7])
-plt.ylim([-4, 6])
-plt.show()
-
-
-correct_preds = np.array([test_data[i] for i in range(len(test_data)) if test_labels[i] == pred_labels[i]])
-false_preds   = np.array([test_data[i] for i in range(len(test_data)) if test_labels[i] != pred_labels[i]])
-
-fig = plt.figure()
-plt.scatter(correct_preds[:, 0], correct_preds[:, 1], c='black')
-plt.scatter(false_preds[:, 0], false_preds[:, 1], c='red')
-plt.xlim([-1, 7])
-plt.ylim([-4, 6])
+plt.xlabel('Length in cm')
+plt.ylabel('Weight in kg')
+plt.legend()
 plt.show()
