@@ -17,7 +17,7 @@ In this running example we classify fish using their length and weight as input 
 |   5 |     21 |   2.36 |    bass |
 | ... |    ... |    ... |     ... |
 
-Each row represents the data for one fish. Now we plot length against weight.
+Each row represents the data for one fish. Now we plot length against weight. (See `1-plot.py` on how to do this)
 
 ![basic plot of all fish](plots/basic.png)
 
@@ -37,12 +37,24 @@ For this to work in a formal setup, kNN needs a **distance function**, that is u
 
 <img src="https://latex.codecogs.com/gif.latex?distance(fish_1,fish_2)=\sqrt{(length_1-length_2)^2&plus;(weight_1-weight_2)^2)}" title="distance function" />
 
-Using this distance function we can predict the label of one data point.
+Using this distance function we can predict the label of one data point. Usually it is a good idea to scale both axes to a range of `0` to `1` (normalization). Otherwise the fishes lengths carry more weight in the classification process, because they tend to be the larger numbers.
 
-## Step 3: Decision Boundary
+In `2-classify.py` kNN predicts 'catfish' for the new data point, just as intended.
+
+
+## Step 3: Evaluating Accuracy
+
+We use the test data to estimate the accuracy of our algorithm. We predict the label of every test point and compare it to the label, we know to be correct. Remember: We know the correct label, because this is supervised learning.
+
+In `2-classify.py` kNN scores 95% accuracy for this fish example. 
+
+## Step 4: Decision Boundary
 
 We can also learn what is called a decision boundary - a line separating the two groups. This will facilitate classifying larger amounts of new data.
 
-Code will follow
+![plot with decision boundary](plots/boundary.png)
 
-## Step 4: Evaluating Accuracy
+
+## Step 5: Overfitting and Underfitting
+
+to do :)
