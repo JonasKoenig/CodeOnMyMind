@@ -32,6 +32,8 @@ The following two applications of supervised learning are distinguished by their
 
 - __Regression__ is useful if the output is a number from a continuous range of values. Example: Try to guess the length of a persons finger by looking at their height.
 
+I will supply you with coding examples for important algorithms such as [*k*-Nearest-Neighbors](knn/README.md) and Support Vector Machines (coming soon).
+
 ### Semi-Supervised Learning
 
 Supervised learning requires labeled training data. But labeling by hand can be cumbersome and expensive.
@@ -50,6 +52,8 @@ If we have no output information, we use unsupervised learning. The learning alg
 
 - __Anomaly Detection:__ In data preprocessing we may want to discard data, that is too far apart from the rest of the data. For example we measure the temperature of room over the course of a year. Now we want to ignore the day our intern made himself a coffee directly underneath the thermometer. Anomaly detection aims to identify such outliers.
 
+*k*-Means is an algorithm similar to *k*-Nearest-Neighbors. I will have a code example ready soon.
+
 
 ### Batch, Online and Active Learning
 
@@ -62,3 +66,9 @@ This last paragraph is concerned with how we acquire the training data:
 - __Active:__ The algorithm has access to the whole data set and _'asks'_ for the output solution of certain data points.
 
 These are some applications I have encountered and thought to be interesting. By no means is this list complete, but I hope I gave you an insight into the nebulous realm of machine learning. I will improve and expand upon this page as I go, so stay tuned.
+
+## On a personal note ...
+
+Machine learning is not voodoo. In my opinion it can be a useful tool in understanding data. I am just getting into this field and there are people working on machine learning, that are far smarter me. Nevertheless there are a lot of problems to solve. We are no where near a general or super artificial intelligence, that will trigger the machine uprising and the end of human kind.
+
+That being said, we are witnessing a process that could have serious implications for our society. My advice: Try to understand what computer scientists are talking about, ask critical questions and try to participate in shaping the future of this field.

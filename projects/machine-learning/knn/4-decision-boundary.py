@@ -34,6 +34,6 @@ catfish = training_data[training_labels == 1]
 plt.scatter(basses[:,0], basses[:,1], color='orange', marker='o', label='bass')    # bass
 plt.scatter(catfish[:,0], catfish[:,1], color='blue', marker='x', label='catfish') # catfish
 
-plt.xlabel('Length in cm')
-plt.ylabel('Weight in kg')
+plt.xlabel('Length (normalized)')
+plt.ylabel('Weight (normalized)')
 plt.show()

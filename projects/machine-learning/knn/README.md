@@ -46,15 +46,29 @@ In `2-classify.py` kNN predicts 'catfish' for the new data point, just as intend
 
 We use the test data to estimate the accuracy of our algorithm. We predict the label of every test point and compare it to the label, we know to be correct. Remember: We know the correct label, because this is supervised learning.
 
-In `2-classify.py` kNN scores 95% accuracy for this fish example. 
+In `2-classify.py` kNN scores 95% accuracy for this fish example.
 
 ## Step 4: Decision Boundary
 
 We can also learn what is called a decision boundary - a line separating the two groups. This will facilitate classifying larger amounts of new data.
 
-![plot with decision boundary](plots/boundary.png)
+![plot with decision boundary](plots/decision-boundary.png)
+
+Note: Some points are missing in this plot, because the training data is only a part of the data set we looked at in previous plots.
 
 
-## Step 5: Overfitting and Underfitting
+## Step 5: Underfitting and Overfitting
 
-to do :)
+Admittedly these plots did not turn out great. I still hope to convey what the phenomena of underfitting and overfitting mean.
+
+![plot with underfitting](plots/underfit.png)
+
+Underfitting is the more intuitive side of this spectrum. If we choose a boundary, that is too simple to explain the complexities of our training data, new data will often be misclassified. If we choose a very large *k*, the kNN algorithm will always classify new data with the most common label in our training set.
+
+![plot with overfitting](plots/overfit.png)
+
+If we choose *k* too small (in this case k=1) the algorithm will overfit. Our goal is to generalize from the training data, so we are prepared for all kinds of new data. If we fit the decision boundary too well to the training data, the generalizing character of learning is lost.
+
+## Outlook
+
+The tricky part for any data scientist is to choose the parameters, that make machine learning work - in this case *k*. There is no *one size fits all* solution. One approach to automate the parameter choice is cross validation. I will explain cross validation in my project on Support Vector Machines (coming soon).
