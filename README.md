@@ -6,7 +6,9 @@ My name is Jonas and I study Computer Science in Tübingen, Germany. I am creati
 
 The full history of this repository aims to show how this repository developed and which projects were added when. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
 
-- `24. Apr 2019` [Machine Learning](./projects/machine-learning): An explanation of what it is and examples _(python)_
+- `21. May 2019` [Machine Learning: kNN](./projects/machine-learning/knn): Introduction to the *k*-Nearest-Neighbors algorithm _(python)_
+
+- `24. Apr 2019` [Machine Learning](./projects/machine-learning): An explanation of what it is and examples
 
 - `17. Apr 2019` [Memory Game](./projects/memory-game): The classic game for your computer _(html,css,js)_
 
