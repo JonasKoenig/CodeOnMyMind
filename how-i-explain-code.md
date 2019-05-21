@@ -1,4 +1,4 @@
-<- [Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
+[⬅️ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
 
 # How I explain code
 
@@ -37,5 +37,14 @@ random_grid = np.random.randint(0, 2, size=(a,a)) # give it a name
 ```
 
 I will try to incorporate this into my explanations.
+
+</details>
+
+<details>
+<summary>Three levels of audience</summary>
+
+The goal is to write a text, that three levels of audience can read. Beginners, Advanced and Experts should all be able to take something from the text.
+
+This proved pretty challenging. I try to include an outlook after every topic, where I drop a few keywords, that interested readers can further research.
 
 </details>
