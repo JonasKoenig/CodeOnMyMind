@@ -27,7 +27,7 @@ As you can see longer fish are heavier. Another useful information, we want to d
 
 ![plot of all fish with their label](plots/classes.png)
 
-On average, the catfish are longer and heavier. Sorry to all fish enthusiasts if these numbers are wildly inaccurate. Humans can distinguish the two kinds of fish in this plot, but can we make a machine do it?
+On average, the catfish are longer and heavier (Sorry to all fish enthusiasts if these numbers are wildly inaccurate). Humans can distinguish the two kinds of fish in this plot, but can we make a machine do it?
 
 ## Step 2: Classifying with kNN
 
