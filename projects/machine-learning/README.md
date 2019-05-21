@@ -69,6 +69,6 @@ These are some applications I have encountered and thought to be interesting. By
 
 ## On a personal note ...
 
-Machine learning is not voodoo. In my opinion it can be a useful tool in understanding data. I am just getting into this field and there are people working on machine learning, that are far smarter me. Nevertheless there are a lot of problems to solve. We are no where near a general or super artificial intelligence, that will trigger the machine uprising and the end of human kind.
+Machine learning is not voodoo. In my opinion it can be a useful tool in understanding data. I am just getting into this field and there are people working on machine learning, that are far smarter than me. Nevertheless there are a lot of problems to solve. We are no where near a general or super artificial intelligence, that will trigger the machine uprising and the end of human kind.
 
 That being said, we are witnessing a process that could have serious implications for our society. My advice: Try to understand what computer scientists are talking about, ask critical questions and try to participate in shaping the future of this field.
