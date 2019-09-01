@@ -29,6 +29,18 @@ Final result:
 
 ![plot with clusters and matching means](plots/cluster.png)
 
+## When it does not work
+
+During initialization the first centers are chosen at random. This means we can have bad luck and end up with a less reasonable result:
+
+![result with bad initialization](plots/bad-init.png)
+
+One way of preventing this is to try different initializations and weigh the plausibility of their results.
+
+Another issue is the choice of *k*. You have to have an idea of how many clusters you are looking for. Here is an example of a bad *k*:
+
+![result with bad k](plots/bad-k.png)
+
 ## Outlook
 
 This algorithm illustrates how important it is to choose a proper parameter. Ideally, data scientists understand the data set well enough to know what they are looking for. In this case, how many clusters are you looking for? There is no one-size-fits-all solution.
