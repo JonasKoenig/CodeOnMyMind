@@ -52,7 +52,7 @@ If we have no output information, we use unsupervised learning. The learning alg
 
 - __Anomaly Detection:__ In data preprocessing we may want to discard data, that is too far apart from the rest of the data. For example we measure the temperature of room over the course of a year. Now we want to ignore the day our intern made himself a coffee directly underneath the thermometer. Anomaly detection aims to identify such outliers.
 
-*k*-Means is an algorithm similar to *k*-Nearest-Neighbors. I will have a code example ready soon.
+[*k*-Means](kmeans/README.md) is an algorithm similar to *k*-Nearest-Neighbors. It is a comprehensible clustering algorithm.
 
 
 ### Batch, Online and Active Learning
