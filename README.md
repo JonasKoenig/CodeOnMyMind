@@ -6,31 +6,33 @@ My name is Jonas and I study Computer Science in Tübingen, Germany. I am creati
 
 The full history of this repository aims to show how this repository developed and which projects were added when. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
 
-- `01. Sep 2019` [Machine Learning/kMeans](./projects/machine-learning/kmeans): Clustering an unlabeled data set _(python)_
+- `Nov 2019` [Notes on Haskell](./projects/haskell-notes): A beginners guide to Haskell and Functional Programming _(haskell)_
 
-- `21. May 2019` [Machine Learning/kNN](./projects/machine-learning/knn): Introduction to the *k*-Nearest-Neighbors algorithm _(python)_
+- `Sep 2019` [Machine Learning/kMeans](./projects/machine-learning/kmeans): Clustering an unlabeled data set _(python)_
 
-- `24. Apr 2019` [Machine Learning](./projects/machine-learning): An explanation of what it is and examples
+- `May 2019` [Machine Learning/kNN](./projects/machine-learning/knn): Introduction to the *k*-Nearest-Neighbors algorithm _(python)_
 
-- `17. Apr 2019` [Memory Game](./projects/memory-game): The classic game for your computer _(html,css,js)_
+- `Apr 2019` [Machine Learning](./projects/machine-learning): An explanation of what it is and examples
 
-- `22. Mar 2019` [Colors](./projects/colors): Converting color formats in different languages _(html,css,js)_
+- `Apr 2019` [Memory Game](./projects/memory-game): The classic game for your computer _(html,css,js)_
 
-- `20. Mar 2019` [Learn Python](./projects/learn-python): A beginners guide to python _(python)_
+- `Mar 2019` [Colors](./projects/colors): Converting color formats in different languages _(html,css,js)_
 
-- `19. Mar 2019` [LaTeX Cheat Sheet](./projects/latex-cheat-sheet): Nifty stuff for LaTeX _(latex)_
+- `Mar 2019` [Learn Python](./projects/learn-python): A beginners guide to python _(python)_
 
-- `18. Mar 2019` [JSON to table](./projects/json-to-table): Increase readability in JSON _(html,js)_
+- `Mar 2019` [LaTeX Cheat Sheet](./projects/latex-cheat-sheet): Nifty stuff for LaTeX _(latex)_
 
-- `20. Feb 2019` [Noise](./projects/noise): Random vs. Smooth Noise _(python)_
+- `Mar 2019` [JSON to table](./projects/json-to-table): Increase readability in JSON _(html,js)_
 
-- `19. Feb 2019` [Text Analysis](./projects/text-analysis): TextBlob: Dissecting Text into data _(python)_
+- `Feb 2019` [Noise](./projects/noise): Random vs. Smooth Noise _(python)_
 
-- `10. Jan 2019` [Center-center](./projects/center-center): Centering divs horizontally and vertically _(html,css)_
+- `Feb 2019` [Text Analysis](./projects/text-analysis): TextBlob: Dissecting Text into data _(python)_
 
-- `17. Sep 2018` [Rescaling and Lerp](./projects/rescaling-and-lerp): Linear interpolation between two ranges _(processing)_
+- `Jan 2019` [Center-center](./projects/center-center): Centering divs horizontally and vertically _(html,css)_
 
-- `27. Aug 2018` [Selections via SVG](./projects/svg-selection): ‘marching ants’ animation using svg in css _(svg,css)_
+- `Sep 2018` [Rescaling and Lerp](./projects/rescaling-and-lerp): Linear interpolation between two ranges _(processing)_
+
+- `Aug 2018` [Selections via SVG](./projects/svg-selection): ‘marching ants’ animation using svg in css _(svg,css)_
 
 ## How I explain code
 
