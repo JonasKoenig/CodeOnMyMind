@@ -36,7 +36,7 @@ The full history of this repository aims to show how this repository developed a
 
 ## How I explain code
 
-See [this collection](./how-i-explain-code.md) of lessons I have learned in explaining code.
+See [this collection](./projects/how-i-explain-code) of lessons I have learned in explaining code.
 
 ## Contact
 
