@@ -4,21 +4,15 @@
 
 # Notes on Haskell
 
-🚧 work in progress
-
 Haskell is a programming language, that relies on the functional programming paradigm. I will explain the core concept and introduce the syntax.
 
 ## Functional Programming
 
-- Others are not dysfunctional :)
+Functional programming (FP) transforms data just like mathematical functions do. A function takes one or more arguments and describes a calculation to determine a result.
 
-- focus more on the what than the how
+Functions are stateless. Therefore, if you apply the same function to the same argument twice, it will return the same result. In other programming styles, saving variables and changing them over time forces you to think much more carefully about your workflow. FP allows you to focus more on the what, than the how.
 
-- statically typed
-
-- lazy evaluation
-
-- I find it most helpful to define functional programming by thinking about differences to imperative programming
+I find it most helpful to define FP by thinking about differences to imperative (classical) programming:
 
 |                   | Functional                        | Imperative                    |
 |:------------------|:----------------------------------|:------------------------------|
@@ -103,7 +97,7 @@ main = do
 <details>
   <summary><b>4. Currying</b></summary>
 
-  _to do_
+  🚧 work in progress
 
 </details>
 
