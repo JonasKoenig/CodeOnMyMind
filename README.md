@@ -1,10 +1,10 @@
 # Code On My Mind
 
-My name is Jonas and I study Computer Science in Tübingen, Germany. I am creating this repository to keep track of nifty code snippets and techniques I learned. I share this with you, not because something like this has never been done before, but to practice explaining code. Feel free to reuse and modify any code you see here.
+My name is Jonas and I study computer science in Tübingen, Germany. My Goal is to make programming more accessible and keep track of techniques I learned. All of the following projects have a README file in which I explain the required insights. Feel free to reuse and modify any code you see here.
 
-## History
+## Projects
 
-The full history of this repository aims to show how this repository developed and which projects were added when. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
+These links list all of my projects. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
 
 - `Nov 2019` [Notes on Haskell](./projects/haskell-notes): A beginners guide to Haskell and Functional Programming _(haskell)_
 
@@ -34,12 +34,8 @@ The full history of this repository aims to show how this repository developed a
 
 - `Aug 2018` [Selections via SVG](./projects/svg-selection): ‘marching ants’ animation using svg in css _(svg,css)_
 
-## How I explain code
-
-See [this collection](./projects/how-i-explain-code) of lessons I have learned in explaining code.
-
 ## Contact
 
-Please contact me on [Twitter](https://twitter.com/Code_On_My_Mind) or make use of the [Issues](https://github.com/JonasKoenig/CodeOnMyMind/issues)-Page on GitHub. As I am learning, I am thankful for all typos and bugs you report. If you have any questions or feedback on existing projects or suggestions on future projects, create an issue and I will respond as soon as I can.
+Please contact me on [Twitter](https://twitter.com/Code_On_My_Mind) or make use of the [Issues](https://github.com/JonasKoenig/CodeOnMyMind/issues)-Page on GitHub. As I am learning, I am thankful for all typo- or bug reports. If you have any questions or feedback on existing projects or suggestions on future projects, create an issue and I will respond as soon as I can.
 
 ![Code On My Mind Banner](media/CodeOnMyMind_Banner.png)
