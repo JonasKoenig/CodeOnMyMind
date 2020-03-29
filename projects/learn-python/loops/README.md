@@ -99,7 +99,7 @@ while i < 12:
     print(i)
 ```
 
-_Note:_ The example above will keep printing `0` forever (or until your laptops battery dies).
+_Note:_ The example above will keep printing `0` forever (or until your laptop's battery dies).
 
 **Task:** Fix the example to only print the numbers from 1 to 12.
 

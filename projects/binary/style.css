@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.textboxes {
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  font-family: monospace;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.textboxes:empty:before {
+  content:attr(data-placeholder);
+  color:gray
+}
+
+#textInput {
+  background-color: white;
+  color: black;
+  cursor: text;
+}
+
+#binOutput {
+  background-color: black;
+  color: white;
+}
