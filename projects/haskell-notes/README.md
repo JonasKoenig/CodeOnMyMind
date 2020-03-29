@@ -97,6 +97,38 @@ main = do
 <details>
   <summary><b>4. Currying</b></summary>
 
+  Currying is a concept at the heart of functional programming. The idea is to partially apply a function to a subset of its arguments. The output of this partial application is another function that takes the remaining arguments.
+
+  Let's look at an example: `plus` is a function that takes two arguments `a`, `b` and returns their sum.
+
+  ```Haskell
+plus a b = a + b
+  ```
+
+  Picture a scenario where we only have one argument available and the second argument will only be available at some point in the future. This is where Currying comes in.
+
+  ```Haskell
+-- first argument is 40
+curryPlus b = 40 + b
+  ```
+
+  Currying yields a function that includes the information from argument `a` and still awaits the second argument.
+
+  You might think _"Ok, cool - but why?"_ In our simple example of the plus function, currying is barely useful. But in a more general sense it can greatly improve performance. Picture a scenario where the second argument might not be relevant to the result.
+
+  ```Haskell
+overOrUnder
+  ```
+
+
+    ```Haskell
+  plus (a,b) = a + b
+  plus a b   = a + b
+  (plus a) b = curryPlus b = a + b
+    ```
+
+    Currying ties strongly into lazy evaluation. Recall ....
+
   🚧 work in progress
 
 </details>
