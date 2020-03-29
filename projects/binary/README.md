@@ -63,11 +63,17 @@ A more modern approach is **UTF-8**, sometimes called Unicode. It includes more 
 
 See my encoding demo and play around with different texts:
 
-![demo](demo.gif)
+![GIF of text encoding demo](text/demo.gif)
+
+Note: The space is briefly encoded using 5 bytes and then jumps back to one byte. The reason is, that a space character without any subsequent characters is encoded as a non-breaking space ([🔗Wikipedia](https://en.wikipedia.org/wiki/Non-breaking_space)).
 
 
 ## Images
 
-## Video
+bitmap
+jpeg (lossy compression comment)
 
 ## Compression
+
+run length
+zip
