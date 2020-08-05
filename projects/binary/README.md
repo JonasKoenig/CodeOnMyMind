@@ -70,16 +70,12 @@ Note: The space is briefly encoded using 5 bytes and then jumps back to one byte
 
 ## Images
 
-bitmap
-jpeg (lossy compression comment)
+🚧 This introduction to the Bitmap representation of images is still under construction. 🚧
 
-## Compression
+## Outlook
 
-run length
-zip
+A related topic, I might cover in the future, is **compression**. Finding a more memory efficient representation of the data while losing no or little information. If you are interested a good jumping off point might be:
 
-## General Idea
-
-encoding and deterministic decoding
-lossy or lossless
-requires in depth understanding of what the information can be
+  - Run Length Encoding Algorithm
+  - How does ZIP work?
+  - Lossy vs. lossless compression
