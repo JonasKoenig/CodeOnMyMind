@@ -77,3 +77,9 @@ jpeg (lossy compression comment)
 
 run length
 zip
+
+## General Idea
+
+encoding and deterministic decoding
+lossy or lossless
+requires in depth understanding of what the information can be

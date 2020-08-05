@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <title>Images in Binary</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="initialImage()">
+  <table>
+    <tr>
+      <td>
+        <h1>1. Image</h1>
+        Pick a color and draw in the picture above:
+        <input id="colorPicker" type="color" value="#FF0000">
+      </td>
+      <td></td>
+      <td>
+        <canvas id="drawingCanvas" width="240" height="180"></canvas>
+      </td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>
+        <h1>2. Color Channels</h1>
+      </td>
+      <td>
+        <canvas id="channelRed" width="240" height="180" class="channel"></canvas>
+      </td>
+      <td>
+        <canvas id="channelGreen" width="240" height="180" class="channel"></canvas>
+      </td>
+      <td>
+        <canvas id="channelBlue" width="240" height="180" class="channel"></canvas>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h1>3. Encoding</h1>
+      </td>
+      <td>
+        <div id="encodingRed" class="encoding"></div>
+      </td>
+      <td>
+        <div id="encodingGreen" class="encoding"></div>
+      </td>
+      <td>
+        <div id="encodingBlue" class="encoding"></div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h1>4. Binary</h1>
+      </td>
+      <td colspan="3">
+        <div id="binary"></div>
+      </td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
