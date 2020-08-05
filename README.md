@@ -4,7 +4,9 @@ My name is Jonas and I study computer science in Tübingen, Germany. My Goal is 
 
 ## Projects
 
-These links list all of my projects. You can download the source code for all projects at once using GitHubs own 'Clone or Download' button at the top of this page (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for a single project.
+These links list all of my projects. You can download the source code for all projects at once using the 'Clone' button above (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for specific projects.
+
+- `Aug 2020` [A Murder of Boids](./projects/boids): 2D simulation of flocking behavior _(processing, js)_
 
 - `Mar 2020` [Binary Information](./projects/binary): How can we express any piece of information using only 1s and 0s? _(html,js)_
 
