@@ -1,16 +1,16 @@
-let MAX_FORCE = 1;
-
 class Boid {
-  
+
   // construct new boid
   constructor() {
     this.position = createVector(random(width), random(height));
     this.velocity = p5.Vector.random2D();
-    this.maxSpeed = random(2, 5);
     this.acceleration = createVector();
+
+    this.maxSpeed = random(2, 5);
+    this.maxForce = 1;
   }
-  
-  
+
+
   // separation: steer to avoid crowding local flockmates
   separation(distances) {
     let perceptionRadius = 20;
@@ -34,8 +34,8 @@ class Boid {
     }
     return steering;
   }
-  
-  
+
+
   // alignment: steer towards the average heading of local flockmates
   alignment(distances) {
     let perceptionRadius = 25;
@@ -52,13 +52,13 @@ class Boid {
       steering.div(total);
       steering.setMag(this.maxSpeed);
       steering.sub(this.velocity);
-      steering.limit(MAX_FORCE);
+      steering.limit(this.maxForce);
       steering.mult(alignmentSlider.value());
     }
     return steering;
   }
-  
-  
+
+
   // cohesion: move toward the average position of local flockmates
   cohesion(distances) {
     let perceptionRadius = 50;
@@ -76,22 +76,22 @@ class Boid {
       steering.sub(this.position);
       steering.setMag(this.maxSpeed);
       steering.sub(this.velocity);
-      steering.limit(MAX_FORCE);
+      steering.limit(this.maxForce);
       steering.mult(cohesionSlider.value());
     }
     return steering;
   }
-  
-  
+
+
   // apply alignment, cohesion and separation
   adjust(distances) {
     let s = this.separation(distances);
     let a = this.alignment(distances);
-    let c = this.cohesion(distances);    
+    let c = this.cohesion(distances);
     this.acceleration.set(s).add(a).add(c);
   }
-  
-  
+
+
   // apply velocity and accelleration
   update() {
     this.position.add(this.velocity).add(width, height,0);
@@ -102,7 +102,7 @@ class Boid {
     this.velocity.setMag(this.maxSpeed);
   }
 
-  
+
   // display boid heading towards velocity
   show() {
     noFill();
@@ -110,8 +110,8 @@ class Boid {
     let p = this.position;
     let v = this.velocity;
     triangle(
-      p.x + 3 * v.x, p.y + 3 * v.y, 
-      p.x - v.y,     p.y + v.x, 
+      p.x + 3 * v.x, p.y + 3 * v.y,
+      p.x - v.y,     p.y + v.x,
       p.x + v.y,     p.y - v.x
     );
   }

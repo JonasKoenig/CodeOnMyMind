@@ -8,7 +8,7 @@ let ctx = drawingCanvas.getContext("2d");
 
 document.getElementById("colorPicker").addEventListener("change", e => BRUSH_COLOR = e.target.value);
 
-let BRUSH_COLOR = "red";
+let BRUSH_COLOR;
 let GRID = 30;
 let isDrawing = false;
 let offsetX = 0;
