@@ -6,7 +6,7 @@ class Boid {
     this.velocity = p5.Vector.random2D();
     this.acceleration = createVector();
 
-    this.maxSpeed = random(2, 5);
+    this.maxSpeed = random(2, 4);
     this.maxForce = 1;
   }
 
@@ -30,7 +30,7 @@ class Boid {
       steering.setMag(this.maxSpeed);
       steering.sub(this.velocity);
       steering.limit(this.maxForce);
-      steering.mult(separationSlider.value());
+      steering.mult(Number(separationSlider.value));
     }
     return steering;
   }
@@ -53,7 +53,7 @@ class Boid {
       steering.setMag(this.maxSpeed);
       steering.sub(this.velocity);
       steering.limit(this.maxForce);
-      steering.mult(alignmentSlider.value());
+      steering.mult(Number(alignmentSlider.value));
     }
     return steering;
   }
@@ -77,7 +77,7 @@ class Boid {
       steering.setMag(this.maxSpeed);
       steering.sub(this.velocity);
       steering.limit(this.maxForce);
-      steering.mult(cohesionSlider.value());
+      steering.mult(Number(cohesionSlider.value));
     }
     return steering;
   }
@@ -94,7 +94,7 @@ class Boid {
 
   // apply velocity and accelleration
   update() {
-    this.position.add(this.velocity).add(width, height,0);
+    this.position.add(this.velocity).add(width, height, 0);
     // this.position.rem(width,height,1);
     this.position.x %= width;
     this.position.y %= height;
@@ -106,13 +106,13 @@ class Boid {
   // display boid heading towards velocity
   show() {
     noFill();
-    stroke(255);
+    stroke(155, 15, 155);
     let p = this.position;
     let v = this.velocity;
     triangle(
       p.x + 3 * v.x, p.y + 3 * v.y,
-      p.x - v.y,     p.y + v.x,
-      p.x + v.y,     p.y - v.x
+      p.x - v.y, p.y + v.x,
+      p.x + v.y, p.y - v.x
     );
   }
 }

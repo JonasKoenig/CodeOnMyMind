@@ -3,16 +3,21 @@
 
 <head>
   <title>A Murder of Boids</title>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
   <script src="boid.js"></script>
   <script src="sketch.js"></script>
-
 </head>
 
 <body>
+  <ul class="sliders">
+    <li><input id="separation" type="range" min="0" value="0.2" max="1" step="0.05">Separation</li>
+    <li><input id="alignment" type="range" min="0" value="0.2" max="1" step="0.05">Alignment</li>
+    <li><input id="cohesion" type="range" min="0" value="0.2" max="1" step="0.05">Cohesion</li>
+  </ul>
+
 </body>
 
 </html>

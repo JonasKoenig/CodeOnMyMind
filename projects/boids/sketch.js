@@ -1,4 +1,4 @@
-let FLOCK_SIZE = 200;
+let FLOCK_SIZE = 150;
 let boidFlock = [];
 let boidDistance = [];
 
@@ -7,9 +7,9 @@ let separationSlider, alignSlider, cohesionSlider;
 function setup() {
   createCanvas(600, 400);
 
-  separationSlider = createSlider(0, 1, 0.2, 0.05);
-  alignmentSlider  = createSlider(0, 1, 0.2, 0.05);
-  cohesionSlider   = createSlider(0, 1, 0.2, 0.05);
+  separationSlider = document.getElementById("separation");
+  alignmentSlider = document.getElementById("alignment");
+  cohesionSlider = document.getElementById("cohesion");
 
   for (let i = 0; i < FLOCK_SIZE; i++) {
     boidFlock.push(new Boid());
@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(150,10,150);
+  background(255);
 
   for (let i = 0; i < FLOCK_SIZE; i++) {
     boidDistance[i] = [];

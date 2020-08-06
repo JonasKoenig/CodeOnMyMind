@@ -1,7 +1,14 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
+
 canvas {
   display: block;
+  border: 1px solid black;
+}
+
+.sliders {
+  list-style: none;
+  padding-left: 0;
 }
