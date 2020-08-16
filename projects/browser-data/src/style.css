@@ -1,0 +1,14 @@
+body {
+  font-family: Helvetica, Arial;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px 12px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.linebreak {
+  height: .5em;
+}
