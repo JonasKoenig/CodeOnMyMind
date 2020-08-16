@@ -8,7 +8,7 @@
 
 
 
-[Wikipedia](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering) describes the algorithm as pseudo code:
+[Wikipedia](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering) describes the algorithm as pseudo code: 
 
 ```
 for each y from top to bottom do
