@@ -82,3 +82,5 @@ void draw() {
 This is the basic setup of this project. Object-oriented programming was a great way of organizing the code, because it reflects real-world objects. In addition, all attributes of any one planet are neatly encapsulated in its own object - constant attributes like size and orbit diameter can neither be changed nor interfered with by other objects.
 
 The object-oriented paradigm is a very wide-spread way of thinking about programming. A less frequently used, but just as powerful, paradigm is functional programming. Head over to my project on [Haskell](../haskell-notes) to get a feel for the difference between the two concepts.
+
+If you want to play around with this projects code - just download the [Processing](https://processing.org/) framework and open up the `planets.pde` file provided here.
