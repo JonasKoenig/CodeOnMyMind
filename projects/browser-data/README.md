@@ -4,7 +4,7 @@
 
 # Browser Data
 
-🚧 in progress 🚧
+🚧 work in progress 🚧
 
 Hold onto your tinfoil hats! Browsers are our windows to the internet. Whenever you visit a web page, your browser sends a request to a server (See: [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)). In that request it specifies what documents or information the client (that's you) wants to see and where to send the response. As the web matured to accommodate more and more devices, these requests got more and more sophisticated. But what information about you is out there?
 

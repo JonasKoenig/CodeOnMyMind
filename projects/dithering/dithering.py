@@ -1,24 +1,28 @@
 import numpy as np
 from PIL import Image
 
-img = Image.open("media/bw_panda.png")
+# load sea gull image
+img = Image.open("media/gull.jpg")
 
-def find_closest_palette_color(color, steps):
-    closest = np.round(color/255*(steps-1)) * 255/(steps-1)
-    return np.clip(closest, 0, 255)
+# finds closest match in reduced palette
+def quantize(color, n):
+    color = np.round(color/255*(n-1)) * 255/(n-1)
+    return np.clip(color, 0, 255)
 
-def quantization(img,steps):
+# reduce color palette to 'n' grey values
+def quantization(n):
     pixels = np.array(img)
-    quantized = np.round(pixels/255*(steps-1)) * 255/(steps-1)
+    quantized = quantize(pixels, n)
     return Image.fromarray(quantized).convert('RGB')
 
-def dithering(img,steps):
+# color reduction using dithering
+def dithering(n):
     pixels = np.array(img)
 
     for y in range(1,img.width-1):
         for x in range(0,img.height-1):
             oldpixel = pixels[x][y]
-            newpixel = find_closest_palette_color(oldpixel, steps)
+            newpixel = quantize(oldpixel, n)
             pixels[x][y] = newpixel
             quant_error = oldpixel - newpixel
             pixels[x+1][y  ] += quant_error * 7 / 16
@@ -28,4 +32,16 @@ def dithering(img,steps):
 
     return Image.fromarray(pixels).convert('RGB')
 
-dithering(img, 2).save("media/dithering.png", optimize=True)
+# save quantization of sea gull
+q = Image.new('RGB', (img.width * 3, img.height))
+q.paste(img, (0, 0))
+q.paste(quantization(2), (img.width * 1, 0))
+q.paste(quantization(5), (img.width * 2, 0))
+q.save("media/quantization.jpg", optimze=True)
+
+# save dithering of sea gull
+d = Image.new('RGB', (img.width * 3, img.height))
+d.paste(img, (0, 0))
+d.paste(dithering(2), (img.width * 1, 0))
+d.paste(dithering(5), (img.width * 2, 0))
+d.save("media/dithering.jpg", optimze=True)

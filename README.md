@@ -6,6 +6,10 @@ My name is Jonas and I study computer science in Tübingen, Germany. My Goal is 
 
 These links list all of my projects. You can download the source code for all projects at once using the 'Clone' button above (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for specific projects.
 
+- `Aug 2020` [Dithering](./projects/dithering): Image filter reducing the color palette while preserving the image _(python)_
+
+- `Aug 2020` [Planets](./projects/planets): Visualization of our solar system using object-oriented programming _(processing)_
+
 - `Aug 2020` [Mosaic](./projects/mosaic): Piece together a large image from small image tiles _(python)_
 
 - `Aug 2020` [A Murder of Boids](./projects/boids): 2D simulation of flocking behavior _(processing, js)_

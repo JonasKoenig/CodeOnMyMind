@@ -9,7 +9,6 @@ let mappaOptions = {
   style: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
 }
 
-
 // Define map elements
 let co2Map;
 let canvas;
@@ -23,7 +22,6 @@ let maxScale = 0;
 function preload() {
   co2Table = loadTable('data/co2.csv', 'csv', 'header');
 }
-
 
 // Map setup
 function setup() {
@@ -48,12 +46,7 @@ function setup() {
   stroke(0, 100);
 }
 
-
-function mousePressed() {
-  drawClouds();
-}
-
-
+// 
 function drawClouds() {
   clear();
   for (row of co2Table.rows) {
@@ -63,15 +56,10 @@ function drawClouds() {
   }
 }
 
+//
 function drawCloud(c) {
   pos = co2Map.latLngToPixel(c.lat, c.lng);
   size = map(sqrt(c.co2), minScale, maxScale, 1, 30) * pow(2, co2Map.zoom());
-
-  if (dist(mouseX, mouseY, pos.x, pos.y) < size / 2) {
-    fill(0);
-    tooltip.innerHTML = c.country + ": " + c.co2;
-  } else {
-    fill(127, 127);
-  }
+  fill(127, 127);
   ellipse(pos.x, pos.y, size);
 }
