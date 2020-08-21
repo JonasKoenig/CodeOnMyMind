@@ -28,7 +28,7 @@ The quantization error is simple to calculate: `old pixel - new pixel`. The erro
 <table>
   <tr>
     <td></td>
-    <td><center>*</center></td>
+    <td>*</td>
     <td>7/16</td>
   </tr>
   <tr>
@@ -37,6 +37,8 @@ The quantization error is simple to calculate: `old pixel - new pixel`. The erro
     <td>1/16</td>
   </tr>
 </table>
+
+This distribution only works if dithering is applied top to bottom and left to right. The respective errors in the right-most column and bottom row are ignored.
 
 [Wikipedia](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering) describes the algorithm by Floyd and Steinberg as pseudo code. I wrote the algorithm in python and I think the resulting script is quite readable.
 
