@@ -1,8 +1,8 @@
 int radius = 70;
 
 void setup() {
-  // fullScreen();
-  size(800,600);
+  fullScreen();
+  // size(800,600);
 }
 
 void draw() {

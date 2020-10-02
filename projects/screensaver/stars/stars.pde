@@ -6,8 +6,8 @@ int newDot = 0;
 Dot[] dots = new Dot[1024];
 
 void setup() {
-  // fullScreen();
-  size(800,600);
+  fullScreen();
+  // size(800,600);
   noStroke();
   noCursor();
   background(15);

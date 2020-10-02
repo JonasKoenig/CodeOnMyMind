@@ -6,4 +6,4 @@
 
 🚧 work in progress 🚧
 
-<!-- Just a side note upfront: Testing this project yourself is a little tricky. The reason being, that the processing library I use does not allow for loading local files. If you want to play around with the map you need to run the page on a local server. I did this by entering `python -m http.server` to my console, but that requires an installation.  -->
+See the interactive map on [p5.org](https://editor.p5js.org/JonasKoenig/present/a-Mm0SVzN).
