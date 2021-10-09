@@ -1,6 +1,6 @@
 # Code On My Mind
 
-My name is Jonas and I study computer science in Tübingen, Germany. My Goal is to make programming more accessible and keep track of techniques I learned. All of the following projects have a README file in which I explain the required insights. Feel free to reuse and modify any code you see here.
+My name is Jonas and I am a computer science MSc based in Tübingen, Germany. My Goal is to make programming more accessible and keep track of techniques I learned. All of the following projects have a README file in which I explain the required insights. Feel free to reuse and modify any code you see here.
 
 ## Projects
 
