@@ -1,0 +1,41 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+.level {
+    color: lightslategray;
+}
+
+.answer {
+    height: 180px;
+    width: 180px;
+    margin: 15px;
+    
+    font-size: 125px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.answer:hover {
+    background-color: lightslategray;
+}
+
+.answer:active {
+    background-color: lightgray;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    font-size: 12px;
+    opacity: 30%;
+}

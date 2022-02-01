@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <link rel="shortcut icon" href="static/favicon.svg">
+        <title>The Impossible Game</title>
+
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        
+        {% block content %}
+        {% endblock %}
+
+        <div class="footer">⚠️Warning: The odds of actually winning is close to winning the lottery (specifically 1 to 117,573,120) which potentially makes this game a huge waste of time.</div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

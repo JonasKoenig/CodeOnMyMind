@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block head %}
+
+<script type="text/javascript" >
+    const possibleAnswers = {{ choices | safe }};
+</script>
+
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{% if level > 0 %}
+    <p class="level">Level {{ level }}</p>
+{% endif %}
+
+<h3>{{ message }}</h3>
+
+<form method="POST" id="answers"></form>
+
+{% endblock %}

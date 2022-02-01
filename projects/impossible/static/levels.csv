@@ -1,0 +1,18 @@
+level;lastAnswer;title;choices;message
+0;start; The Impossible Game;▶️;Welcome to the Impossible Game. Enjoy!
+0;🔁;The Impossible Game;▶️;Good to have you back
+0;🥳;The Impossible Game;▶️;Back so soon?
+1;▶️;The Impossible Game;👊 ✋ ✌️;👋 Beat me at Rock Paper Scissors!
+1;✋;The Impossible Game;✋ ✌️ 👊;🤝 Draw. You get a do-over.
+2;👊;The Impossible Game;🍼 🎓 🎖️;This is a game of chance. Your choice won't affect the difficulty.
+3;🍼;The Impossible Game;🌱 ☀️ 🍂 ❄️;Which season is best?
+4;❄️;The Impossible Game;🔥 🏴‍☠️ 🗡️ 🌊 🕷️;Keep going. What's the the worst that could happen?
+5;🌊;The Impossible Game;🔑 🪓 📎 🗝️ 🔧 💡;Open this lock: 🔒
+6;🗝️;The Impossible Game;⚀ ⚁ ⚂ ⚃ ⚄ ⚅;This game is so random.
+7;⚀;The Impossible Game;🚶 🚲 🚌 🚆 ⛵ ✈️ 🚀;You are going places ...
+8;🚲;The Impossible Game;👘 👗 👔 🧥 👚 🥼 🥻 🍁;😩 I don't know what to wear tomorrow.
+9;🥼;The Impossible Game;🔴 🟠 🟡 🟢 🔵 🟣 🟤 ⚫ ⚪;🎨 What is my favorite color?
+10;⚫;The Impossible Game;🏘️ 🏰 🏨 🏭 🏩 🏤 🏡 🏫 🏚️ 🏕️;👕 Where is Waldo?
+11;🏚️;The Impossible Game;1 2 3 4 5 6 7 8 9;Roughly one in nine people belong to the smartest 11%. Which are you?
+0;9;The Improbable Game;🥳;You WON against all odds! 🎉
+0;lose;The Impossible Game;🔁;Better luck next time. 🍀
