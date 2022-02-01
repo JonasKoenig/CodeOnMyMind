@@ -6,6 +6,8 @@
 
 The idea for this project came to me when I thought about the astronomical odds to win the lottery. How can we grasp these tiny fractions?
 
+<img src="media/gameplay.gif" alt="Demo of gameplay" width="500px"/>
+
 <details open>
 <summary><b>Click here to hide the math</b></summary>
 
