@@ -1,6 +1,7 @@
 const answersElement = document.getElementById('answers');
 
-possibleAnswers.forEach(a => {
+// create a button for each answer choice
+userChoices.forEach(a => {
     let inputElement = document.createElement('input');
     inputElement.type = 'submit';
     inputElement.name = 'answer';
@@ -9,10 +10,11 @@ possibleAnswers.forEach(a => {
     answersElement.appendChild(inputElement);
 });
 
-function submit(key){
+// POST the selected choice to server
+function submit(choice){
     var http = new XMLHttpRequest();
     var url = window.location.href;
-    var params = 'answer='+key;
+    var params = 'answer=' + choice;
     http.open('POST', url, true);
     http.setRequestHeader('Content-Type', 'application/json');
 
