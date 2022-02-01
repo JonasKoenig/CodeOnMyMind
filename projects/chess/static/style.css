@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(64, 65, 77);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+div {
+    margin: 0;
+}
+
+#chessBoard {
+    margin: auto;
+    border-radius: 30px;
+    width: 720px;
+    height: 720px;
+}
+
+.rank {
+    width: 100%;
+    height: 12.5%;
+}
+
+.square {
+    display: inline-block;
+    width: 12.5%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    text-align: right;
+}
+
+.white {
+    /* background-color: antiquewhite;
+    color: saddlebrown; */
+    background-color: aliceblue;
+    color: lightslategrey;
+}
+
+.black {
+    /* background-color: saddlebrown;
+    color: antiquewhite; */
+    background-color: lightslategrey;
+    color: aliceblue;
+}
+
+.piece {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* transition: background-position .2s; */
+}
+
+.piece:hover {
+    /* background-position: 0 -5px; */
+}
+
+
+* > .hide {
+    background-color: greenyellow;
+}
+
+.hide {
+    display: none;
+}
+
+#transitionSquare {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-color: none;
+    opacity: 100%;
+}
+
+/* .selected {
+    box-shadow: inset 0 0 15px deepskyblue, inset 0 0 10px white;
+} */
+
+.drag-over {
+    border: solid 3px black;
+}
+
+
+
+
