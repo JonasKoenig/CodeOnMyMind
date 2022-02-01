@@ -10,19 +10,17 @@ userChoices.forEach(a => {
     answersElement.appendChild(inputElement);
 });
 
-// POST the selected choice to server
+// POST the user's choice to server
 function submit(choice){
     var http = new XMLHttpRequest();
-    var url = window.location.href;
-    var params = 'answer=' + choice;
-    http.open('POST', url, true);
+    var currentURL = window.location.href;
+    http.open('POST', currentURL, true);
     http.setRequestHeader('Content-Type', 'application/json');
-
     http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             document.open();
             document.write(http.responseText);
         }
     }
-    http.send(params);
+    http.send('answer=' + choice);
 }
