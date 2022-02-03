@@ -34,5 +34,5 @@ def gameLoop():
     t, l, m, c = fetchNextLevel(userAnswer)
     return render_template("game.html", title=t, level=l, message=m, choices=json.dumps(c))
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+# if __name__ == "__main__":
+#     app.run(debug=True, port=5000)
