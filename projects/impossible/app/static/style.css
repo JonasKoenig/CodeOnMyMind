@@ -13,8 +13,10 @@ h1 {
 }
 
 .answer {
-    height: 180px;
+    
     width: 180px;
+    max-width: 30%;
+    height: auto;
     margin: 15px;
     
     font-size: 125px;

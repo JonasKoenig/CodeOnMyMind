@@ -1,7 +1,7 @@
 const answersElement = document.getElementById('answers');
 
 // create a button for each answer choice
-userChoices.forEach(a => {
+level.choices.forEach(a => {
     let inputElement = document.createElement('input');
     inputElement.type = 'submit';
     inputElement.name = 'answer';

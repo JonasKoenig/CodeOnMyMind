@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+    color: rgb(38, 34, 22);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+canvas {
+    border: solid 5px rgb(38, 34, 22);
+}
+
+
+/* Color Theme Swatches in RGBA */
+.A-Tribute-to-Dune-1-rgba { color: rgba(38, 34, 22, 1); }
+.A-Tribute-to-Dune-2-rgba { color: rgba(191, 139, 93, 1); }
+.A-Tribute-to-Dune-3-rgba { color: rgba(89, 64, 43, 1); }
+.A-Tribute-to-Dune-4-rgba { color: rgba(165, 108, 74, 1); }
+.A-Tribute-to-Dune-5-rgba { color: rgba(242, 242, 242, 1); }

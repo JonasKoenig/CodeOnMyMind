@@ -3,20 +3,21 @@
 {% block head %}
 
 <script type="text/javascript" >
-    const userChoices = {{ choices | safe }};
+    var level = JSON.parse('{{ level | tojson | safe}}');
+    console.log(level);
 </script>
 
 {% endblock %}
 
 {% block content %}
 
-<h1>{{ title }}</h1>
+<h1>{{ level["title"] }}</h1>
 
-{% if level > 0 %}
-    <p class="level">Level {{ level }}</p>
+{% if level["currentLevel"] > 0 %}
+    <p class="level">Level {{ level["currentLevel"] }}/{{ level["maxLevel"] }}</p>
 {% endif %}
 
-<h3>{{ message }}</h3>
+<h3>{{ level["message"] }}</h3>
 
 <form method="POST" id="answers"></form>
 

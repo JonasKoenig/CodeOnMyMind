@@ -29,14 +29,7 @@ Recreating a lottery would make for a boring game so I created a series of fun q
 
 This project was an exercise in the python server technology Flask. The server holds the data on the different levels and maps user answers to the next game state. Client and server cummunicate via POST requests.
 
-Unfortunatelly I do not have a server to host the game. To get the game running for yourself you need to
-
-1. Download the source code
-2. Install Python and the Flask-package
-3. Run `server.py`
-4. Go to your brower and enter `localhost:5000`
-
-Have fun playing! 👋
+The game runs on [this server](https://impossible-game.herokuapp.com/) hosted by Heroku. Have fun playing! 👋
 
 Note: In the current state the answers are not randomized. I chose to keep it this way to give players the chance to explore all levels. This may change in the future.
 
