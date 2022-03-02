@@ -1,6 +1,7 @@
 <!-- Header -->
 [⬅️ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
-[💾 Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fbinary)
+[💾 Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fbinary) &nbsp;
+[▶️ Demo](https://jonaskoenig.github.io/CodeOnMyMind/projects/binary/text/)
 
 # Binary Information
 
@@ -68,9 +69,9 @@ See my encoding demo and play around with different texts:
 Note: The space is briefly encoded using 5 bytes and then jumps back to one byte. The reason is, that a space character without any subsequent characters is encoded as a non-breaking space ([🔗Wikipedia](https://en.wikipedia.org/wiki/Non-breaking_space)).
 
 
-## Images
+<!-- ## Images
 
-🚧 This introduction to the Bitmap representation of images is still under construction. 🚧
+🚧 This introduction to the Bitmap representation of images is still under construction. 🚧 -->
 
 ## Outlook
 
