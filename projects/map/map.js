@@ -1,4 +1,3 @@
-// Using Mappa library. See: https://mappa.js.org/
 let mappa = new Mappa('Leaflet');
 let mappaOptions = {
   lat: 0,
