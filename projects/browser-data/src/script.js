@@ -29,10 +29,6 @@ function loadData() {
   xmlHttp.send( null );
   newItem("IP Address", JSON.parse(xmlHttp.responseText)["ip"]);
 
-
-
-
-
 }
 
 loadData();
