@@ -25,7 +25,7 @@ class Tooltip {
         fill(0);
         textSize(SMALL_TEXT);
         textAlign(CENTER);
-        text(this.text, this.position.x, this.position.y + SMALL_TEXT);
+        text(this.text, this.position.x, this.position.y + SMALL_TEXT/2);
     }
 
     largeLabel () {
@@ -35,7 +35,7 @@ class Tooltip {
         fill(0, 200);
         let displayText = this.text + ' t'
         let boxwidth = max(textWidth(this.header), textWidth(displayText)) + 4;
-        let positionX = this.position.x - boxwidth/2
+        let positionX = this.position.x - boxwidth/2;
         rect(positionX, this.position.y, boxwidth, 2 * MEDIUM_TEXT + 4);
 
         fill(255);
