@@ -1,4 +1,4 @@
-const PARTICLE_COUNT = 25;
+const PARTICLE_COUNT = 20;
 const PARTICLE_MAX_SIZE = 22;
 const PARTICLE_MIN_SIZE = 2;
 
