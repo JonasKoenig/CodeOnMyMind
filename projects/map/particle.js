@@ -1,55 +1,40 @@
-// A simple Particle class
-let Particle = function(position, size) {
-  let direction = createVector(random(-1, 1), random(-1, 1))
-  this.acceleration = direction.setMag(0.5);
-  this.velocity = createVector(random(-1, 1), random(-1, 1));
-  this.position = position.copy();
-  this.lifespan = 45;
-  this.size = size;
-};
+class Particle {
+  size;
+  position;
+  velocity;
+  acceleration;
+  lifespan;
 
-Particle.prototype.run = function() {
-  this.update();
-  this.display();
-};
-
-// Method to update position
-Particle.prototype.update = function(){
-  this.velocity.add(this.acceleration);
-  this.position.add(this.velocity);
-  this.lifespan -= 2;
-};
-
-// Method to display
-Particle.prototype.display = function() {
-  stroke(100, this.lifespan-100);
-  strokeWeight(2);
-  // noStroke();
-  fill(127, this.lifespan*4);
-  ellipse(this.position.x, this.position.y, this.size, this.size);
-};
-
-// Is the particle still useful?
-Particle.prototype.isDead = function(){
-  return this.lifespan < 0;
-};
-
-let ParticleSystem = function(position, size) {
-  this.origin = position;//.copy();
-  this.size = size;
-  this.particles = [];
-};
-
-ParticleSystem.prototype.addParticle = function() {
-  this.particles.push(new Particle(this.origin, this.size));
-};
-
-ParticleSystem.prototype.run = function() {
-  for (let i = this.particles.length-1; i >= 0; i--) {
-    let p = this.particles[i];
-    p.run();
-    if (p.isDead()) {
-      this.particles.splice(i, 1);
-    }
+  reset (size, position, lifespan) {
+    this.size = size;
+    this.position = position.copy();
+    this.velocity = createVector(random(-.03*size, .03*size), random(-.1*size, -.15*size));
+    this.acceleration = createVector(.01*size, 0)//-.03*size);
+    this.lifespan = lifespan;
   }
-};
+
+  update () {
+    if (this.velocity == undefined) {
+      return;
+    }
+    this.position.add(this.velocity);
+    this.velocity.add(this.acceleration);
+    this.lifespan--;
+  }
+  
+  show () {
+    if (this.velocity == undefined) {
+      return;
+    }
+    
+    fill(this.r(), this.g(), this.b(), this.a());
+    circle(this.position.x, this.position.y, this.s());
+  }
+
+  // size and color mapping
+  s = () => (this.lifespan > 28) ? .8*this.size : this.size;
+  r = () => (this.lifespan > 18) ? map(this.lifespan, 18, 30, 150, 255) : 127;
+  g = () => (this.lifespan > 28) ? 225 : 127;
+  b = () => (this.lifespan > 28) ? 0 : 127;
+  a = () => map(this.lifespan, 0, 30, 0, 245);
+}
