@@ -11,11 +11,13 @@ class ParticleEmitter {
         this.position = position;
         this.particleCount = particleCount;
         this.particles = [];
-        this.index = 0;
-        this.tooltip = new Tooltip(position, country, emissions);
+        this.index = floor(random(0, particleCount));
+        this.tooltip = new Tooltip(position, country, emissions, worldMap.zoom());
 
         for (let i = 0; i < this.particleCount; i++) {
-            this.particles.push(new Particle());
+            let particle = new Particle();
+            particle.reset(this.size, this.position, this.particleCount);
+            this.particles.push(particle);
         }
     }
 
@@ -32,6 +34,6 @@ class ParticleEmitter {
         this.particles[this.index].show();
         this.index = (this.index + 1) % this.particleCount;
 
-        this.tooltip.show(worldMap.zoom());
+        this.tooltip.show();
     }
 }  

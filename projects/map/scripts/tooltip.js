@@ -7,17 +7,17 @@ class Tooltip {
     header;
     text;
 
-    constructor (position, header, text) {
+    constructor (position, header, text, zoom) {
         this.position = position.add(createVector(0, 20));
         this.header = header;
         this.text = text;
-    }
 
-    show (zoom) {
         if (zoom > 4) {
-            this.mediumLabel();
+            this.show = this.largeLabel;
         } else if (zoom > 2) {
-            this.smallLabel();
+            this.show = this.smallLabel;
+        } else {
+            this.show = () => false;
         }
     }
 
@@ -28,7 +28,7 @@ class Tooltip {
         text(this.text, this.position.x, this.position.y + SMALL_TEXT);
     }
 
-    mediumLabel () {
+    largeLabel () {
         textSize(MEDIUM_TEXT);
         textAlign(LEFT);
 
