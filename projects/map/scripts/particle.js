@@ -26,15 +26,19 @@ class Particle {
     if (this.velocity == undefined) {
       return;
     }
-    
-    fill(this.r(), this.g(), this.b(), this.a());
-    circle(this.position.x, this.position.y, this.s());
+
+    if (this.lifespan > PARTICLE_COUNT - 2) {
+      fill(this.YELLOW);
+      circle(this.position.x, this.position.y, .8 * this.size);
+    } else {
+      fill(this.colorMap());
+      circle(this.position.x, this.position.y, this.size);
+    }
   }
 
   // size and color mapping
-  s = () => (this.lifespan > 28) ? .8*this.size : this.size;
-  r = () => (this.lifespan > 18) ? map(this.lifespan, 18, 30, 150, 255) : 127;
-  g = () => (this.lifespan > 28) ? 225 : 127;
-  b = () => (this.lifespan > 28) ? 0 : 127;
-  a = () => map(this.lifespan, 0, 30, 0, 245);
+  YELLOW = color(255, 225, 0);
+  RED = color(255, 127, 127, 245);
+  GREY = color(100, 0);
+  colorMap = () => lerpColor(this.GREY, this.RED, (this.lifespan/PARTICLE_COUNT)**2)
 }

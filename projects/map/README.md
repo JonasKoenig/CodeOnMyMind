@@ -7,3 +7,10 @@
 🚧 work in progress 🚧
 
 See the interactive map on [p5.org](https://editor.p5js.org/JonasKoenig/present/a-Mm0SVzN).
+
+
+
+### Run locally
+
+- `python -m http.server`
+- `localhost:8000`

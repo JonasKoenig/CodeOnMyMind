@@ -1,3 +1,7 @@
+const PARTICLE_COUNT = 25;
+const PARTICLE_MAX_SIZE = 22;
+const PARTICLE_MIN_SIZE = 2;
+
 let mappa = new Mappa('Leaflet');
 let mappaOptions = {
   lat: 0,
@@ -37,18 +41,15 @@ function draw() {
 }
 
 function createParticleSystems() {
-  console.log(worldMap.zoom());
-
   particleSystems = [];
   for (let i = 0; i < co2Data.rows.length; i++) {
     let row = co2Data.rows[i].obj;
 
-    let size = map(sqrt(row.co2), minScale, maxScale, 2, 25) * worldMap.zoom();
+    let size = map(sqrt(row.co2), minScale, maxScale, PARTICLE_MIN_SIZE, PARTICLE_MAX_SIZE) * worldMap.zoom();
     let position = worldMap.latLngToPixel(row.lat, row.lng);
     position = createVector(position.x, position.y);
-    let particleCount = 30;
 
-    sys = new ParticleEmitter(size, position, particleCount, row.country, row.co2);
+    sys = new ParticleEmitter(size, position, PARTICLE_COUNT, row.country, row.co2);
     particleSystems.push(sys);
   }
 }
