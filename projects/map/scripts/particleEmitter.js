@@ -6,13 +6,13 @@ class ParticleEmitter {
     index;
     tooltip;
 
-    constructor(size, position, particleCount, country, emissions) {
+    constructor(size, position, particleCount, country, co2, co2_per_capita, co2_global_share) {
         this.size = size;
-        this.position = position;
+        this.position = position.copy();
         this.particleCount = particleCount;
         this.particles = [];
         this.index = floor(random(0, particleCount));
-        this.tooltip = new Tooltip(position, country, emissions, worldMap.zoom());
+        this.tooltip = new Tooltip(position, country, co2, co2_per_capita, co2_global_share, worldMap.zoom());
 
         for (let i = 0; i < this.particleCount; i++) {
             let particle = new Particle();

@@ -2,6 +2,8 @@ const PARTICLE_COUNT = 20;
 const PARTICLE_MAX_SIZE = 22;
 const PARTICLE_MIN_SIZE = 2;
 
+const YEAR = 2020;
+
 let mappa = new Mappa('Leaflet');
 let mappaOptions = {
   lat: 0,
@@ -15,7 +17,7 @@ let mappaOptions = {
 let worldMap, canvas, tooltip, co2Data, minScale, maxScale, particleSystems;
 
 function preload() {
-  co2Data = loadTable('data/co2.csv', 'csv', 'header');
+  co2Data = loadTable('data/co2-countries.csv', 'csv', 'header');
 }
 
 function setup() {
@@ -49,7 +51,7 @@ function createParticleSystems() {
     let position = worldMap.latLngToPixel(row.lat, row.lng);
     position = createVector(position.x, position.y);
 
-    sys = new ParticleEmitter(size, position, PARTICLE_COUNT, row.country, row.co2);
+    sys = new ParticleEmitter(size, position, PARTICLE_COUNT, row.country, row.co2, row.co2_per_capita, row.co2_global_share);
     particleSystems.push(sys);
   }
 }

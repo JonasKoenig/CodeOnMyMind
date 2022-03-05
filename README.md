@@ -6,6 +6,8 @@ My name is Jonas and I am a computer science MSc based in Tübingen, Germany. My
 
 These links list all of my projects. You can download the source code for all projects at once using the 'Clone' button above (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for specific projects.
 
+- `Mar 2022` [CO₂ Emission Map](./projects/map): Visualising emissions in an interactive world map  _(js, python)_
+
 - `Feb 2022` [Autonomous Snake](./projects/snake): The classic game Snake plays itself _(html, js)_
 
 - `Jan 2022` [Impossible Game](./projects/impossible): The Impossible Game shows just how unlikely winning the lottery is _(python, js)_

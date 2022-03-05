@@ -6,6 +6,7 @@ path = os.path.dirname(__file__)
 # read/clean co2 data
 co2_csv = os.path.join(path, 'owid-co2-data.csv')
 co2 = pd.read_csv(co2_csv)
+co2 = co2[co2['year'] == 2020]
 
 # read country capital locations
 locations_csv = os.path.join(path, 'capitals.csv')
