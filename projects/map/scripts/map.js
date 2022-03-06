@@ -30,6 +30,7 @@ function setup() {
   minScale = sqrt(min(co2Data.getColumn('co2')));
   maxScale = sqrt(max(co2Data.getColumn('co2')));
 
+  frameRate(30);
   noStroke();
   createParticleSystems();
 }
@@ -47,45 +48,18 @@ function createParticleSystems() {
   for (let i = 0; i < co2Data.rows.length; i++) {
     let row = co2Data.rows[i].obj;
 
-    let size = map(sqrt(row.co2), minScale, maxScale, PARTICLE_MIN_SIZE, PARTICLE_MAX_SIZE) * worldMap.zoom();
-    let position = worldMap.latLngToPixel(row.lat, row.lng);
-    position = createVector(position.x, position.y);
+    let coordinates = worldMap.latLngToPixel(row.lat, row.lng);
 
-    sys = new ParticleEmitter(size, position, PARTICLE_COUNT, row.country, row.co2, row.co2_per_capita, row.co2_global_share);
+    if (clipping(coordinates)) continue;
+
+    let size = map(sqrt(row.co2), minScale, maxScale, PARTICLE_MIN_SIZE, PARTICLE_MAX_SIZE) * worldMap.zoom();
+    let position = createVector(coordinates.x, coordinates.y);
+
+    sys = new ParticleEmitter(size, position, PARTICLE_COUNT, i);
     particleSystems.push(sys);
   }
 }
 
-
-
-
-
-
-
-
-
-//
-function drawClouds() {
-  clear();
-  // for (row of co2Table.rows) {
-  //   if (co2Map.map.getBounds().contains({lat: row.obj.lat, lng: row.obj.lng})) {
-  //     drawCloud(row.obj);
-  //   }
-  // }
-
-  minScale = Infinity;
-  maxScale = 0;
-
-  for (let i = 0; i < co2Data.rows.length; i++) {
-    let row = co2Data.rows[i].obj;
-    minScale = min(minScale, row.co2);
-    maxScale = max(maxScale, row.co2);
-
-    position = worldMap.latLngToPixel(row.lat, row.lng);
-    size = map(sqrt(row.co2), minScale, maxScale, 1, 30) * pow(2, worldMap.zoom());
-    particleSystems[i] = new ParticleEmitter(position);
-  }
-
-  minScale = sqrt(minScale);
-  maxScale = sqrt(maxScale);
+function clipping(pos) {
+  return (pos.x <= 0) || (pos.x >= width) || (pos.y <= 0) || (pos.y >= height);
 }

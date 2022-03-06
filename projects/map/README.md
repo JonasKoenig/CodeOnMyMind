@@ -7,7 +7,7 @@
 
 Using Open Street Maps, Leaflet, Mappa, p5.js
 
-Data Source: https://ourworldindata.org/co2-emissions
+Data Source: https://ourworldindata.org/co2-emissions (2020)
 
 Data preprocessing using python
 
