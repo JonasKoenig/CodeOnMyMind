@@ -21,6 +21,21 @@ Some problems come up time and time again in programming. Design patterns are ab
 Deal with how objects are created
 
 ### Builder
+
+description
+
+- 👍 pro
+- 👎 con
+
+```c#
+private int demo;
+```
+
+[⬆️ Back to top](#design-patterns) &nbsp;
+[📋 See full example](https://github.com/JonasKoenig/CodeOnMyMind/blob/master/projects/patterns/Builder.cs)
+
+
+
 ### Dependency Injection
 ### Factory
 ### Prototype
@@ -30,18 +45,23 @@ Resource Allocation Is Initialization (RAII)
 
 ### Singleton
 
-A singleton is a type of object that can only ever have one instance. Singletons are useful to access global variables, for example settings in your application. The key idea is to hide the constructor and only access the class through a `getInstance` method.
+A singleton is a type of object that can only ever have one instance. Singletons are useful to manage a state or access global variables, for example settings in your application. The key idea is to hide the constructor and only access the class through a `getInstance` method.
+
+- 👍 easy to access globally unique properties
+- 👎 might introduce hidden dependencies
+- 👎 difficult to test
 
 ```c#
-private constructor () {
+private Settings () {
     // this constructor is only called once
 }
 
 static Settings getInstance () {
-    if (Settings.instance is null) {
-        Settings.instance = new Settings();
+    if (Settings._instance is null) {
+        Settings._instance = new Settings();
     }
-    return Settings.instance;
+
+    return Settings._instance;
 }
 ```
 

@@ -1,19 +1,19 @@
 // Singleton Example: Settings class
 public class Settings {
-    static Settings instance;
-    int property1;
+    static Settings _instance;
+    bool property1;
     int property2;
-    int property3;
+    float property3;
 
-    private constructor () {
+    private Settings () {
         // this constructor is only called once
     }
 
     static Settings getInstance () {
-        if (Settings.instance is null) {
-            Settings.instance = new Settings();
+        if (Settings._instance is null) {
+            Settings._instance = new Settings();
         }
 
-        return Settings.instance;
+        return Settings._instance;
     }
 }
