@@ -1,7 +1,6 @@
-<style>h2 {text-decoration: underline;}</style>
-
 <!-- Header -->
-[⬅️ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind)
+[⬅️ Back to main page](https://github.com/JonasKoenig/CodeOnMyMind) &nbsp;
+[💾 Download](https://minhaskamal.github.io/DownGit/#/home?url=https:%2F%2Fgithub.com%2FJonasKoenig%2FCodeOnMyMind%2Ftree%2Fmaster%2Fprojects%2Fpatterns)
 
 # Design Patterns
 
@@ -33,14 +32,21 @@ Resource Allocation Is Initialization (RAII)
 
 A singleton is a type of object that can only ever have one instance. Singletons are useful to access global variables, for example settings in your application. The key idea is to hide the constructor and only access the class through a `getInstance` method.
 
-<details>
-<summary>📋 Example Code</summary>
+```c#
+private constructor () {
+    // this constructor is only called once
+}
 
-```c#:Singleton.cs```
+static Settings getInstance () {
+    if (Settings.instance is null) {
+        Settings.instance = new Settings();
+    }
+    return Settings.instance;
+}
+```
 
-</details>
-
-[⬆️ Back to top](#design-patterns)
+[⬆️ Back to top](#design-patterns) &nbsp;
+[📋 See full example](https://github.com/JonasKoenig/CodeOnMyMind/blob/master/projects/patterns/Singleton.cs)
 
 ## Structural Patterns
 
