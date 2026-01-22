@@ -2,14 +2,6 @@
 
 My name is Jonas and I am a computer science MSc based in Tübingen, Germany. My Goal is to make programming more accessible and keep track of techniques I learned. All of the following projects have a README file in which I explain the required insights. Feel free to reuse and modify any code you see here.
 
-<a href="https://twitter.com/Code_On_My_Mind">
-  <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/twitter.svg" />
-</a>
-
-<a href="https://www.linkedin.com/in/jonas-k%C3%B6nig-5718401aa">
-  <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg" />
-</a>
-
 ## Projects
 
 These links list all of my projects. You can download the source code for all projects at once using the 'Clone' button above (also see: [GitHub Beginners Guide](https://education.github.com/git-cheat-sheet-education.pdf)). Use [DownGit](https://minhaskamal.github.io/DownGit/#/home) to get the code for specific projects.
